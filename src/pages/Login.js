@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 
 import { useGlobalContext } from '../context/GlobalState';
@@ -10,8 +10,6 @@ const Login = () => {
     useGlobalContext();
   const passwordRef = useRef(null);
   const userRef = useRef(null);
-
-  useEffect(() => {});
 
   const handleSubmit = async (e) => {
     e.preventDefault();

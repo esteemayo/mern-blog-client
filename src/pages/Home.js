@@ -14,7 +14,7 @@ const Home = () => {
 
   useEffect(() => {
     fetchPosts();
-  }, []);
+  }, [search]);
 
   const fetchPosts = async () => {
     const { data } = await getPosts(search);

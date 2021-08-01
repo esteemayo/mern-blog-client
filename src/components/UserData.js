@@ -38,16 +38,16 @@ const UserData = () => {
       } catch (err) {
         console.error(err);
       }
+    }
 
-      try {
-        const { data } = await updateUserData(userData);
-        updateSuccess(data);
-        setSuccess(true);
-        window.location.reload();
-      } catch (err) {
-        console.error(err);
-        updateFailure();
-      }
+    try {
+      const { data } = await updateUserData(userData);
+      updateSuccess(data);
+      setSuccess(true);
+      window.location.reload();
+    } catch (err) {
+      console.error(err);
+      updateFailure();
     }
   };
 

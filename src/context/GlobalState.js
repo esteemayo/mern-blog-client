@@ -1,6 +1,15 @@
 import React, { useContext, useReducer, createContext } from 'react';
 import jwtDecode from 'jwt-decode';
 
+import {
+  LOGOUT,
+  LOGIN_START,
+  UPDATE_START,
+  LOGIN_SUCCESS,
+  LOGIN_FAILURE,
+  UPDATE_FAILURE,
+  UPDATE_SUCCESS,
+} from './Types';
 import Reducer from './Reducer';
 
 const initialState = {
@@ -9,13 +18,14 @@ const initialState = {
   isFetching: false,
 };
 
-if (localStorage.getItem('token')) {
-  const token = localStorage.getItem('token');
+const tokenKey = 'token';
+const token = localStorage.getItem(tokenKey);
+if (token) {
   const decodedToken = jwtDecode(token);
   const expiredToken = Date.now();
 
   if (expiredToken > decodedToken.exp * 1000) {
-    localStorage.removeItem('token');
+    localStorage.removeItem(tokenKey);
   } else {
     initialState.user = decodedToken;
   }
@@ -27,40 +37,40 @@ const AppProvider = ({ children }) => {
   const [state, dispatch] = useReducer(Reducer, initialState);
 
   const loginStart = (userCredentials) => {
-    dispatch({ type: 'LOGIN_START' });
+    dispatch({ type: LOGIN_START });
   };
 
   const loginSuccess = (userData) => {
-    localStorage.setItem('token', userData.token);
+    localStorage.setItem(tokenKey, userData.token);
     dispatch({
-      type: 'LOGIN_SUCCESS',
+      type: LOGIN_SUCCESS,
       payload: userData,
     });
   };
 
   const loginFailure = () => {
-    dispatch({ type: 'LOGIN_FAILURE' });
+    dispatch({ type: LOGIN_FAILURE });
   };
 
   const logout = () => {
-    localStorage.removeItem('token');
-    dispatch({ type: 'LOGOUT' });
+    localStorage.removeItem(tokenKey);
+    dispatch({ type: LOGOUT });
   };
 
   const updateStart = (userCredentials) => {
-    dispatch({ type: 'UPDATE_START' });
+    dispatch({ type: UPDATE_START });
   };
 
   const updateSuccess = (userData) => {
-    localStorage.setItem('token', userData.token);
+    localStorage.setItem(tokenKey, userData.token);
     dispatch({
-      type: 'UPDATE_SUCCESS',
+      type: UPDATE_SUCCESS,
       payload: userData,
     });
   };
 
   const updateFailure = () => {
-    dispatch({ type: 'UPDATE_FAILURE' });
+    dispatch({ type: UPDATE_FAILURE });
   };
 
   return (

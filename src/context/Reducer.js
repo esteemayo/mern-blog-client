@@ -1,5 +1,15 @@
+import {
+  LOGOUT,
+  LOGIN_START,
+  UPDATE_START,
+  LOGIN_SUCCESS,
+  LOGIN_FAILURE,
+  UPDATE_FAILURE,
+  UPDATE_SUCCESS,
+} from './Types';
+
 const Reducer = (state, action) => {
-  if (action.type === 'LOGIN_START') {
+  if (action.type === LOGIN_START) {
     return {
       ...state,
       user: null,
@@ -8,7 +18,7 @@ const Reducer = (state, action) => {
     };
   }
 
-  if (action.type === 'LOGIN_SUCCESS') {
+  if (action.type === LOGIN_SUCCESS) {
     return {
       ...state,
       user: action.payload,
@@ -17,7 +27,7 @@ const Reducer = (state, action) => {
     };
   }
 
-  if (action.type === 'LOGIN_FAILURE') {
+  if (action.type === LOGIN_FAILURE) {
     return {
       ...state,
       user: null,
@@ -26,7 +36,7 @@ const Reducer = (state, action) => {
     };
   }
 
-  if (action.type === 'LOGOUT') {
+  if (action.type === LOGOUT) {
     return {
       ...state,
       user: null,
@@ -35,14 +45,14 @@ const Reducer = (state, action) => {
     };
   }
 
-  if (action.type === 'UPDATE_START') {
+  if (action.type === UPDATE_START) {
     return {
       ...state,
       isFetching: true,
     };
   }
 
-  if (action.type === 'UPDATE_SUCCESS') {
+  if (action.type === UPDATE_SUCCESS) {
     return {
       ...state,
       user: action.payload,
@@ -51,7 +61,7 @@ const Reducer = (state, action) => {
     };
   }
 
-  if (action.type === 'UPDATE_FAILURE') {
+  if (action.type === UPDATE_FAILURE) {
     return {
       ...state,
       user: state.user,

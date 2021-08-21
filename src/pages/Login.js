@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { useGlobalContext } from '../context/GlobalState';
 import { loginUser } from '../services/userService';
+import { LOGIN_START } from '../context/Types';
 import Button from '../components/Button';
 
 const Login = () => {
@@ -13,7 +14,7 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    dispatch({ type: 'LOGIN_START' });
+    dispatch({ type: LOGIN_START });
 
     try {
       const userData = {

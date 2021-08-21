@@ -20,7 +20,7 @@ axios.interceptors.response.use(null, (error) => {
 
 function setJwt(jwt) {
   axios.defaults.headers.common['Authorization'] = `Bearer ${jwt}`;
-}
+};
 
 const http = {
   get: axios.get,

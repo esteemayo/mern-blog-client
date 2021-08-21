@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import { updateUserPassword } from '../services/userService';
 import { useGlobalContext } from '../context/GlobalState';
+import { UPDATE_START } from '../context/Types';
 import Button from './Button';
 
 const UserPassword = () => {
@@ -13,7 +14,7 @@ const UserPassword = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    dispatch({ type: 'UPDATE_START' });
+    dispatch({ type: UPDATE_START });
 
     const userData = {
       password,

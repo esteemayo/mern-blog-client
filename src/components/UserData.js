@@ -4,6 +4,7 @@ import { FaUserCircle } from 'react-icons/fa';
 import { useGlobalContext } from '../context/GlobalState';
 import { updateUserData } from '../services/userService';
 import { upload } from '../services/uploadService';
+import { UPDATE_START } from '../context/Types';
 
 const PF = 'http://localhost:8080/images/';
 
@@ -19,7 +20,7 @@ const UserData = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    dispatch({ type: 'UPDATE_START' });
+    dispatch({ type: UPDATE_START});
 
     const userData = {
       name,

@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { FaPlus } from 'react-icons/fa';
 
-import { getCategories } from './../services/categoryService';
+import { getCategories } from '../services/categoryService';
 import { createPost } from '../services/postService';
 import { upload } from '../services/uploadService';
-import Button from '../components/Button';
+import { Button } from '../components';
 
 const Write = () => {
   const [file, setFile] = useState(null);

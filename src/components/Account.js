@@ -1,7 +1,5 @@
 import React from 'react';
-
-import UserPassword from '../components/UserPassword';
-import UserData from '../components/UserData';
+import { UserData, UserPassword } from './index';
 
 const Account = () => {
   return (

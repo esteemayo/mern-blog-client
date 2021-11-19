@@ -3,6 +3,8 @@ import { toast } from 'react-toastify';
 
 import logger from './logService';
 
+axios.defaults.baseURL = 'http://localhost:8080/api/v1';
+
 axios.interceptors.response.use(null, (error) => {
   const expectedError =
     error.response &&

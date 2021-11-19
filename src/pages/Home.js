@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
+import { Header, SideBar, Spinner, Posts } from '../components';
 import { getPosts } from '../services/postService';
-import Sidebar from '../components/Sidebar';
-import Spinner from '../components/Spinner';
-import Header from '../components/Header';
-import Posts from '../components/Posts';
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -31,7 +28,7 @@ const Home = () => {
       <Header />
       <div className='home'>
         <Posts posts={posts} />
-        <Sidebar />
+        <SideBar />
       </div>
     </React.Fragment>
   );

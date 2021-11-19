@@ -5,12 +5,8 @@ import { Link } from 'react-router-dom';
 import Moment from 'react-moment';
 
 import { useGlobalContext } from '../context/GlobalState';
-import {
-  deletePost,
-  updatePost,
-  getPostWithSlug,
-} from '../services/postService';
-import Button from './Button';
+import * as postService from '../services/postService';
+import { Button } from './index';
 
 const PF = 'http://localhost:8080/images/';
 
@@ -24,7 +20,7 @@ const SinglePost = () => {
 
   useEffect(() => {
     const fetchPost = async () => {
-      const { data } = await getPostWithSlug(slug);
+      const { data } = await postService.getPostWithSlug(slug);
       setPost(data.post);
       setTitle(data.post.title);
       setDescription(data.post.description);
@@ -36,7 +32,7 @@ const SinglePost = () => {
   const handleUpdate = async () => {
     try {
       const postBody = { title, description };
-      await updatePost(post._id, postBody);
+      await postService.updatePost(post._id, postBody);
       setIsEditing(false);
     } catch (err) {
       console.error(err);
@@ -45,7 +41,7 @@ const SinglePost = () => {
 
   const handleDelete = async () => {
     try {
-      await deletePost(post._id);
+      await postService.deletePost(post._id);
       window.location.replace('/');
     } catch (err) {
       console.error(err);

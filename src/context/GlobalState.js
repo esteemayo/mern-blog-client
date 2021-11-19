@@ -1,15 +1,7 @@
 import React, { useContext, useReducer, createContext } from 'react';
 import jwtDecode from 'jwt-decode';
 
-import {
-  LOGOUT,
-  LOGIN_START,
-  UPDATE_START,
-  LOGIN_SUCCESS,
-  LOGIN_FAILURE,
-  UPDATE_FAILURE,
-  UPDATE_SUCCESS,
-} from './Types';
+import * as actions from './Types';
 import Reducer from './Reducer';
 
 const initialState = {
@@ -37,40 +29,40 @@ const AppProvider = ({ children }) => {
   const [state, dispatch] = useReducer(Reducer, initialState);
 
   const loginStart = (userCredentials) => {
-    dispatch({ type: LOGIN_START });
+    dispatch({ type: actions.LOGIN_START });
   };
 
   const loginSuccess = (userData) => {
     localStorage.setItem(tokenKey, userData.token);
     dispatch({
-      type: LOGIN_SUCCESS,
+      type: actions.LOGIN_SUCCESS,
       payload: userData,
     });
   };
 
   const loginFailure = () => {
-    dispatch({ type: LOGIN_FAILURE });
+    dispatch({ type: actions.LOGIN_FAILURE });
   };
 
   const logout = () => {
     localStorage.removeItem(tokenKey);
-    dispatch({ type: LOGOUT });
+    dispatch({ type: actions.LOGOUT });
   };
 
   const updateStart = (userCredentials) => {
-    dispatch({ type: UPDATE_START });
+    dispatch({ type: actions.UPDATE_START });
   };
 
   const updateSuccess = (userData) => {
     localStorage.setItem(tokenKey, userData.token);
     dispatch({
-      type: UPDATE_SUCCESS,
+      type: actions.UPDATE_SUCCESS,
       payload: userData,
     });
   };
 
   const updateFailure = () => {
-    dispatch({ type: UPDATE_FAILURE });
+    dispatch({ type: actions.UPDATE_FAILURE });
   };
 
   return (
@@ -96,4 +88,4 @@ export const useGlobalContext = () => {
   return useContext(AppContext);
 };
 
-export { AppContext, AppProvider };
+export { AppProvider };

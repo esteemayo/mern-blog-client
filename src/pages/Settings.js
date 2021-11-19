@@ -2,8 +2,7 @@ import React from 'react';
 
 import { deleteCurrentUser } from '../services/userService';
 import { useGlobalContext } from '../context/GlobalState';
-import Account from '../components/Account';
-import Sidebar from '../components/Sidebar';
+import { Account, SideBar } from '../components'
 
 const Settings = () => {
   const { user, logout } = useGlobalContext();
@@ -30,7 +29,7 @@ const Settings = () => {
         </div>
         <Account />
       </div>
-      <Sidebar />
+      <SideBar />
     </div>
   );
 };

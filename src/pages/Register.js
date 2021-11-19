@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { FaSpinner } from 'react-icons/fa';
 
 import { registerUser } from '../services/userService';
-import Button from '../components/Button';
+import { Button } from '../components';
 
 const Register = () => {
   const [error, setError] = useState(false);

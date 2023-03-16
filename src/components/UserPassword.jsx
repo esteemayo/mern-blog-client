@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { updateUserPassword } from '../services/userService';
 import { useGlobalContext } from '../context/GlobalState';
 import { UPDATE_START } from '../context/Types';
-import { Button } from './index';
+import Button from './Button';
 
 const UserPassword = () => {
   const [password, setPassword] = useState('');

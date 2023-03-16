@@ -28,7 +28,7 @@ const AppContext = createContext();
 const AppProvider = ({ children }) => {
   const [state, dispatch] = useReducer(Reducer, initialState);
 
-  const loginStart = (userCredentials) => {
+  const loginStart = () => {
     dispatch({ type: actions.LOGIN_START });
   };
 

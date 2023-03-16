@@ -4,7 +4,6 @@ import Account from 'components/Account';
 import { deleteCurrentUser } from 'services/userService';
 import SideBar from 'components/Sidebar';
 import { useGlobalContext } from 'context/GlobalState';
-import SideBar from 'components/Sidebar';
 
 const Settings = () => {
   const { user, logout } = useGlobalContext();

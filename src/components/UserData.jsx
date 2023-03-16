@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { FaUserCircle } from 'react-icons/fa';
 
-import { useGlobalContext } from '../context/GlobalState';
+import { useGlobalContext } from '../context/auth/AuthContext';
 import { updateUserData } from '../services/userService';
 import { upload } from '../services/uploadService';
-import { UPDATE_START } from '../context/Types';
+import { UPDATE_START } from '../context/auth/AuthTypes';
 
 const PF = 'http://localhost:8080/images/';
 

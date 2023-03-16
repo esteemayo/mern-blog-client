@@ -1,6 +1,3 @@
-import UserPassword from './UserPassword';
-import SinglePost from './SinglePost';
-import UserData from './UserData';
 import Account from './Account';
 import Button from './Button';
 import Header from './Header';

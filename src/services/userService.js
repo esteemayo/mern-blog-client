@@ -9,7 +9,8 @@ export const registerUser = (userData) => http.post(`${apiEndPoint}/signup`, use
 
 export const loginUser = (userData) => http.post(`${apiEndPoint}/login`, userData);
 
-export const updateUserData = (userData) => http.patch(`${apiEndPoint}/update-me`, userData);
+export const updateUserData = (userData) =>
+  http.patch(`${apiEndPoint}/update-me`, userData);
 
 export const updateUserPassword = (userData) =>
   http.patch(`${apiEndPoint}/update-my-password`, userData);

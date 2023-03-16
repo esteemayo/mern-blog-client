@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Account from 'components/Account';
 import { deleteCurrentUser } from 'services/userService';
 import { useGlobalContext } from 'context/GlobalState';
 import Account from 'components/Account';

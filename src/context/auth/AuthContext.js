@@ -29,7 +29,9 @@ const AppProvider = ({ children }) => {
   const [state, dispatch] = useReducer(Reducer, initialState);
 
   const loginStart = () => {
-    dispatch({ type: actions.LOGIN_START });
+    dispatch({
+      type: actions.LOGIN_START,
+    });
   };
 
   const loginSuccess = (userData) => {

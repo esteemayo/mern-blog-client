@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
 
-import { useGlobalContext } from '../context/GlobalState';
+import { useGlobalContext } from '../context/auth/AuthContext';
 
 const AuthRoute = ({ component: Component, ...rest }) => {
   const { user } = useGlobalContext();

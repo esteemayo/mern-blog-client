@@ -5,7 +5,17 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import ProtectedRoute from './utils/ProtectedRoute';
 import AuthRoute from './utils/AuthRoute';
 import { TopBar } from './components';
-import { About, Category, Home, Login, NotFound, Register, Settings, Single, Write } from './pages';
+import {
+  About,
+  Category,
+  Home,
+  Login,
+  NotFound,
+  Register,
+  Settings,
+  Single,
+  Write,
+} from './pages';
 
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';

@@ -12,7 +12,8 @@ export const getPostWithSlug = (slug) =>
 
 export const createPost = (post) => http.post(apiEndPoint, post);
 
-export const updatePost = (postId, post) => http.patch(postUrl(postId), post);
+export const updatePost = (postId, post) =>
+  http.patch(postUrl(postId), post);
 
 export const deletePost = (postId) => {
   return http.delete(postUrl(postId));

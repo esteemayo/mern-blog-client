@@ -8,7 +8,15 @@ const { REACT_APP_DEV_API_URL, REACT_APP_PROD_API_URL } = process.env;
 
 axios.defaults.baseURL = 'http://localhost:8080/api/v1';
 
-axios.interceptors.response.use(null, (error) => {
+const API = axios.create({
+  baseURL: devEnv ? REACT_APP_DEV_API_URL : REACT_APP_PROD_API_URL,
+  headers: {
+    Accept: 'application/json',
+    'Content-Type': 'application/json',
+  },
+});
+
+API.interceptors.response.use(null, (error) => {
   const expectedError =
     error.response &&
     error.response.status >= 400 &&
@@ -24,14 +32,14 @@ axios.interceptors.response.use(null, (error) => {
 });
 
 function setJwt(jwt) {
-  axios.defaults.headers.common['Authorization'] = `Bearer ${jwt}`;
+  API.defaults.headers.common['Authorization'] = `Bearer ${jwt}`;
 };
 
 const http = {
-  get: axios.get,
-  post: axios.post,
-  patch: axios.patch,
-  delete: axios.delete,
+  get: API.get,
+  post: API.post,
+  patch: API.patch,
+  delete: API.delete,
   setJwt,
 };
 

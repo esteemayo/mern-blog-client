@@ -2,6 +2,7 @@ import React from 'react';
 
 import Account from 'components/Account';
 import { deleteCurrentUser } from 'services/userService';
+import SideBar from 'components/Sidebar';
 import { useGlobalContext } from 'context/GlobalState';
 import SideBar from 'components/Sidebar';
 

@@ -11,7 +11,7 @@ import Spinner from './Spinner';
 import Button from './Button';
 import Header from './Header';
 import TopBar from './TopBar';
-import Posts from './Posts';
-import Post from './Post';
+import UserData from './UserData';
+import UserPassword from './UserPassword';
 
 export { Account, Button, Header, Post, Posts, SideBar, SinglePost, Spinner, TopBar, UserData, UserPassword };

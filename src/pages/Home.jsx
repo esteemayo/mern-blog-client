@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 
 import Header from 'components/Header';
 import { getPosts } from '../services/postService';
+import Posts from 'components/Posts';
 
 const Home = () => {
   const [loading, setLoading] = useState(true);

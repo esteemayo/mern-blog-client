@@ -7,6 +7,7 @@ import Header from './Header';
 import Post from './Post';
 import Posts from './Posts';
 import SideBar from './Sidebar';
+import SinglePost from './SinglePost';
 import Spinner from './Spinner';
 import Button from './Button';
 import Header from './Header';

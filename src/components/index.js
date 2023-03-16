@@ -10,4 +10,16 @@ import TopBar from './TopBar';
 import UserData from './UserData';
 import UserPassword from './UserPassword';
 
-export { Account, Button, Header, Post, Posts, SideBar, SinglePost, Spinner, TopBar, UserData, UserPassword };
+export {
+  Account,
+  Button,
+  Header,
+  Post,
+  Posts,
+  SideBar,
+  SinglePost,
+  Spinner,
+  TopBar,
+  UserData,
+  UserPassword,
+};

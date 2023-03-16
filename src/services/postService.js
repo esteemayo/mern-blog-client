@@ -1,31 +1,18 @@
 import http from './httpService';
-
 const apiEndPoint = '/posts';
 
-function postUrl(id) {
-  return `${apiEndPoint}/${id}`;
-};
+const postUrl = (id) => `${apiEndPoint}/${id}`;
 
-export function getPosts(search) {
-  return http.get(`/posts${search}`);
-};
+export const getPosts = (search) => http.get(`/posts${search}`);
 
-export function getPost(id) {
-  return http.get(postUrl(id));
-};
+export const getPost = (id) => http.get(postUrl(id));
 
-export function getPostWithSlug(slug) {
-  return http.get(`${apiEndPoint}/details/${slug}`);
-};
+export const getPostWithSlug = (slug) => http.get(`${apiEndPoint}/details/${slug}`);
 
-export function createPost(post) {
-  return http.post(apiEndPoint, post);
-};
+export const createPost = (post) => http.post(apiEndPoint, post);
 
-export function updatePost(id, post) {
-  return http.patch(postUrl(id), post);
-};
+export const updatePost = (id, post) => http.patch(postUrl(id), post);
 
-export function deletePost(id) {
+export const deletePost = (id) => {
   return http.delete(postUrl(id));
 };

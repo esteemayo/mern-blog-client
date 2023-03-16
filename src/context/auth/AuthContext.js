@@ -41,7 +41,9 @@ const AppProvider = ({ children }) => {
   };
 
   const loginFailure = () => {
-    dispatch({ type: actions.LOGIN_FAILURE });
+    dispatch({
+      type: actions.LOGIN_FAILURE,
+    });
   };
 
   const logout = () => {

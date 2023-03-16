@@ -1,5 +1,4 @@
 import React from 'react';
-import { UserData, UserPassword } from './index';
 
 const Account = () => {
   return (

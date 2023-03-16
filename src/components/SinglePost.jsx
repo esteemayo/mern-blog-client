@@ -6,7 +6,7 @@ import Moment from 'react-moment';
 
 import { useGlobalContext } from '../context/GlobalState';
 import * as postService from '../services/postService';
-import { Button } from './index';
+import Button from './Button';
 
 const PF = 'http://localhost:8080/images/';
 

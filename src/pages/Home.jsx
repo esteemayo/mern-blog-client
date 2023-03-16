@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-import { Header, SideBar, Spinner, Posts } from '../components';
+import Header from 'components/Header';
 import { getPosts } from '../services/postService';
 
 const Home = () => {

@@ -1,4 +1,5 @@
 import React from 'react';
+import UserData from './UserData';
 
 const Account = () => {
   return (

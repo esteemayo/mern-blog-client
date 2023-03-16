@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 import { updateUserPassword } from '../services/userService';
-import { useGlobalContext } from '../context/GlobalState';
-import { UPDATE_START } from '../context/Types';
+import { useGlobalContext } from '../context/auth/AuthContext';
+import { UPDATE_START } from '../context/auth/AuthTypes';
 import Button from './Button';
 
 const UserPassword = () => {

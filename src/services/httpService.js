@@ -29,8 +29,8 @@ API.interceptors.response.use(null, (error) => {
   return Promise.reject(error);
 });
 
-function setJwt(jwt) {
-  API.defaults.headers.common['Authorization'] = `Bearer ${jwt}`;
+const setJwt = (jwt) => {
+  return API.defaults.headers.common['Authorization'] = `Bearer ${jwt}`;
 };
 
 const http = {

@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 import Button from 'components/Button';
 import { registerUser } from 'services/userService';
-import Button from 'components/Button';
 
 const Register = () => {
   const [error, setError] = useState(false);

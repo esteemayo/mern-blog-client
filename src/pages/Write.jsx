@@ -2,9 +2,9 @@ import { FaPlus } from 'react-icons/fa';
 import React, { useState, useEffect } from 'react';
 
 import Button from 'components/Button';
-import { getCategories } from '../services/categoryService';
-import { createPost } from '../services/postService';
-import { upload } from '../services/uploadService';
+import { getCategories } from 'services/categoryService';
+import { createPost } from 'services/postService';
+import { upload } from 'services/uploadService';
 
 const Write = () => {
   const [file, setFile] = useState(null);

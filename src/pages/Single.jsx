@@ -1,5 +1,5 @@
+import SinglePost from 'components/SinglePost';
 import React from 'react';
-import { SideBar, SinglePost } from '../components';
 
 const Single = () => {
   return (

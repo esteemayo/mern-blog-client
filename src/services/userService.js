@@ -5,7 +5,8 @@ const apiEndPoint = '/users';
 
 http.setJwt(getJwt());
 
-export const registerUser = (userData) => http.post(`${apiEndPoint}/signup`, userData);
+export const registerUser = (userData) =>
+  http.post(`${apiEndPoint}/signup`, userData);
 
 export const loginUser = (userData) =>
   http.post(`${apiEndPoint}/login`, userData);

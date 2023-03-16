@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaSpinner } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-import { registerUser } from '../services/userService';
+import { registerUser } from 'services/userService';
 import Button from 'components/Button';
 
 const Register = () => {

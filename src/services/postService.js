@@ -1,4 +1,5 @@
 import http from './httpService';
+
 const apiEndPoint = '/posts';
 
 const postUrl = (postId) => `${apiEndPoint}/${postId}`;

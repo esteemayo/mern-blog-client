@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import Moment from 'react-moment';
 
-import { useGlobalContext } from '../context/GlobalState';
+import { useGlobalContext } from '../context/auth/AuthContext';
 import * as postService from '../services/postService';
 import Button from './Button';
 

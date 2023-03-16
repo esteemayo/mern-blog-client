@@ -1,5 +1,4 @@
 import React from 'react';
-import { Post } from './index';
 
 const Posts = ({ posts }) => {
   return (

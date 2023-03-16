@@ -8,7 +8,7 @@ import {
   FaSearch,
 } from 'react-icons/fa';
 
-import { useGlobalContext } from '../context/GlobalState';
+import { useGlobalContext } from '../context/auth/AuthContext';
 
 const PF = 'http://localhost:8080/images/';
 

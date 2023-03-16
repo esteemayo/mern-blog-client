@@ -1,3 +1,4 @@
+import { FaPlus } from 'react-icons/fa';
 import React, { useState, useEffect } from 'react';
 import { FaPlus } from 'react-icons/fa';
 

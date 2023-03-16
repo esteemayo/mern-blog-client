@@ -3,6 +3,7 @@ import React from 'react';
 import { deleteCurrentUser } from '../services/userService';
 import { useGlobalContext } from '../context/GlobalState';
 import Account from 'components/Account';
+import SideBar from 'components/Sidebar';
 
 const Settings = () => {
   const { user, logout } = useGlobalContext();

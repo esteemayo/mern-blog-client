@@ -15,6 +15,4 @@ export const updateUserPassword = (userData) => http.patch(`${apiEndPoint}/updat
 
 export const deleteCurrentUser = () => http.delete(`${apiEndPoint}/delete-me`);
 
-function getJwt() {
-  return localStorage.getItem(tokenKey);
-};
+const getJwt = () => localStorage.getItem(tokenKey);

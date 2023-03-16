@@ -49,7 +49,7 @@ const AppProvider = ({ children }) => {
     dispatch({ type: actions.LOGOUT });
   };
 
-  const updateStart = (userCredentials) => {
+  const updateStart = () => {
     dispatch({ type: actions.UPDATE_START });
   };
 

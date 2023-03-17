@@ -7,6 +7,7 @@ import { getFromStorage, removeFromStorage, tokenKey } from 'utils';
 import Reducer from './AuthReducer';
 import * as actions from './AuthTypes';
 
+const token = getJwt();
 const user = getFromStorage(tokenKey)
 
 const initialState = {

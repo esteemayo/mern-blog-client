@@ -35,7 +35,7 @@ const UserPassword = () => {
     };
 
     try {
-      const { data } = await updateUserPassword(userData);
+      const { data } = await updateUserPassword({ ...inputs });
       updateSuccess(data);
       window.location.reload();
     } catch (err) {

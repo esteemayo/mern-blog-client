@@ -8,6 +8,12 @@ import { UPDATE_START } from 'context/auth/AuthTypes';
 
 const PF = 'http://localhost:8080/images/';
 
+const initialState = {
+  name: '',
+  email: '',
+  username: '',
+}
+
 const UserData = () => {
   const { user, dispatch, isFetching, updateSuccess, updateFailure } =
     useGlobalContext();

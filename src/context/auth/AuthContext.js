@@ -50,7 +50,9 @@ const AppProvider = ({ children }) => {
 
   const logout = () => {
     localStorage.removeItem(tokenKey);
-    dispatch({ type: actions.LOGOUT });
+    dispatch({
+      type: actions.LOGOUT,
+    });
   };
 
   const updateStart = () => {

@@ -103,7 +103,7 @@ const UserData = () => {
         id='email'
         type='email'
         placeholder={user.email}
-        onChange={(e) => setEmail(e.target.value)}
+        onChange={handleChange}
       />
       <button className='settingsSubmit' type='submit'>
         {isFetching ? 'Processing...' : 'Update'}

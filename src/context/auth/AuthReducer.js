@@ -1,7 +1,7 @@
 import * as actions from './AuthTypes';
 
-const Reducer = (state, action) => {
-  if (action.type === actions.LOGIN_START) {
+const Reducer = (state, { type, payload }) => {
+  if (type === actions.LOGIN_START) {
     return {
       ...state,
       user: null,
@@ -10,16 +10,16 @@ const Reducer = (state, action) => {
     };
   }
 
-  if (action.type === actions.LOGIN_SUCCESS) {
+  if (type === actions.LOGIN_SUCCESS) {
     return {
       ...state,
-      user: action.payload,
+      user: payload,
       error: false,
       isFetching: false,
     };
   }
 
-  if (action.type === actions.LOGIN_FAILURE) {
+  if (type === actions.LOGIN_FAILURE) {
     return {
       ...state,
       user: null,
@@ -28,7 +28,7 @@ const Reducer = (state, action) => {
     };
   }
 
-  if (action.type === actions.LOGOUT) {
+  if (type === actions.LOGOUT) {
     return {
       ...state,
       user: null,
@@ -37,23 +37,23 @@ const Reducer = (state, action) => {
     };
   }
 
-  if (action.type === actions.UPDATE_START) {
+  if (type === actions.UPDATE_START) {
     return {
       ...state,
       isFetching: true,
     };
   }
 
-  if (action.type === actions.UPDATE_SUCCESS) {
+  if (type === actions.UPDATE_SUCCESS) {
     return {
       ...state,
-      user: action.payload,
+      user: payload,
       isFetching: false,
       error: false,
     };
   }
 
-  if (action.type === actions.UPDATE_FAILURE) {
+  if (type === actions.UPDATE_FAILURE) {
     return {
       ...state,
       user: state.user,

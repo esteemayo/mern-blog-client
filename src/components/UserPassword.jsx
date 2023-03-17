@@ -52,6 +52,7 @@ const UserPassword = () => {
         <label htmlFor='password'>Password</label>
         <input
           id='password'
+          name='password'
           type='password'
           placeholder='********'
           onChange={handleChange}

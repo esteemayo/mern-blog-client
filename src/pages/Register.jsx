@@ -18,7 +18,7 @@ const Register = () => {
 
   const handleChange = ({ target: input }) => {
     const { name, value } = input;
-    setAccount({ ...account, [name]: value });
+    setAccount((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = async (e) => {

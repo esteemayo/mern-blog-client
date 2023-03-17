@@ -12,6 +12,7 @@ const initialState = {
 
 const tokenKey = 'token';
 const token = localStorage.getItem(tokenKey);
+
 if (token) {
   const decodedToken = jwtDecode(token);
   const expiredToken = Date.now();

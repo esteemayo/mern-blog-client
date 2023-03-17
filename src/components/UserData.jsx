@@ -18,6 +18,7 @@ const UserData = () => {
   const { user, dispatch, isFetching, updateSuccess, updateFailure } =
     useGlobalContext();
 
+  const [inputs, setInputs] = useState(initialState);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [file, setFile] = useState(null);

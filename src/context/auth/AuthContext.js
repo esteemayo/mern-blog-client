@@ -5,8 +5,10 @@ import { getFromStorage, tokenKey } from 'utils';
 import Reducer from './AuthReducer';
 import * as actions from './AuthTypes';
 
+const user = getFromStorage(tokenKey)
+
 const initialState = {
-  user: null,
+  user: user ?? null,
   error: false,
   isFetching: false,
 };

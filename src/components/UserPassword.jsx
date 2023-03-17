@@ -63,7 +63,7 @@ const UserPassword = () => {
           id='password'
           type='password'
           placeholder='********'
-          onChange={(e) => setPassword(e.target.value)}
+          onChange={handleChange}
         />
         <label htmlFor='passwordConfirm'>Confirm Password</label>
         <input

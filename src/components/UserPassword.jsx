@@ -26,7 +26,7 @@ const UserPassword = () => {
 
     try {
       const { data } = await updateUserPassword({ ...inputs });
-      updateSuccess(data);
+      updateSuccess(data.details);
       window.location.reload();
     } catch (err) {
       console.error(err);

@@ -28,7 +28,6 @@ const Register = () => {
 
     try {
       const res = await registerUser(account);
-      console.log(res);
       setLoading(false);
       res.data && window.location.replace('/auth/login');
     } catch (err) {

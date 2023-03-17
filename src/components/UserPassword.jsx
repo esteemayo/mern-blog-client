@@ -56,7 +56,7 @@ const UserPassword = () => {
           type='password'
           id='passwordCurrent'
           placeholder='********'
-          onChange={(e) => setPasswordCurrent(e.target.value)}
+          onChange={handleChange}
         />
         <label htmlFor='password'>Password</label>
         <input

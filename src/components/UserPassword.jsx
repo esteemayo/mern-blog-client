@@ -5,7 +5,14 @@ import { updateUserPassword } from '../services/userService';
 import { UPDATE_START } from '../context/auth/AuthTypes';
 import { useGlobalContext } from '../context/auth/AuthContext';
 
+const initialState = {
+  password: '',
+  passwordCurrent: '',
+  passwordConfirm: '',
+};
+
 const UserPassword = () => {
+  const { inputs, setInputs } = useState(initialState);
   const [password, setPassword] = useState('');
   const [passwordCurrent, setPasswordCurrent] = useState('');
   const [passwordConfirm, setPasswordConfirm] = useState('');

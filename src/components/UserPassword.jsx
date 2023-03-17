@@ -19,6 +19,11 @@ const UserPassword = () => {
 
   const { error, dispatch, updateSuccess, updateFailure } = useGlobalContext();
 
+  const handleChange = ({ target: input }) => {
+    const { name, value } = input;
+    setInputs((prev) => ({ ...prev, [name]: value }));
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     dispatch({ type: UPDATE_START });

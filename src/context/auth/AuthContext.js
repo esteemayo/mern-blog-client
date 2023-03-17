@@ -23,9 +23,9 @@ if (token) {
   }
 }
 
-const AppContext = createContext();
+const AuthContext = createContext();
 
-const AppProvider = ({ children }) => {
+const AuthProvider = ({ children }) => {
   const [state, dispatch] = useReducer(Reducer, initialState);
 
   const loginStart = () => {
@@ -74,7 +74,7 @@ const AppProvider = ({ children }) => {
   };
 
   return (
-    <AppContext.Provider
+    <AuthContext.Provider
       value={{
         ...state,
         logout,
@@ -88,12 +88,12 @@ const AppProvider = ({ children }) => {
       }}
     >
       {children}
-    </AppContext.Provider>
+    </AuthContext.Provider>
   );
 };
 
 export const useGlobalContext = () => {
-  return useContext(AppContext);
+  return useContext(AuthContext);
 };
 
-export { AppProvider };
+export { AuthProvider };

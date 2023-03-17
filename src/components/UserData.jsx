@@ -35,9 +35,7 @@ const UserData = () => {
     dispatch({ type: UPDATE_START });
 
     const userData = {
-      name,
-      email,
-      username,
+      ...inputs,
     };
 
     if (file) {

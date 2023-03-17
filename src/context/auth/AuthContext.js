@@ -4,7 +4,7 @@ import React, { useContext, useReducer, createContext } from 'react';
 import Reducer from './AuthReducer';
 import { getJwt } from 'services/userService';
 import * as actions from './AuthTypes';
-import { getFromStorage, removeFromStorage, tokenKey } from 'utils';
+import { getFromStorage, removeFromStorage, setToStorage, tokenKey } from 'utils';
 
 const token = getJwt();
 const user = getFromStorage(tokenKey)
@@ -67,7 +67,7 @@ const AuthProvider = ({ children }) => {
   };
 
   const updateSuccess = (userData) => {
-    localStorage.setItem(tokenKey, userData.token);
+    setToStorage(tokenKey, userData);
     dispatch({
       type: actions.UPDATE_SUCCESS,
       payload: userData,

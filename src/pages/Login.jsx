@@ -23,7 +23,7 @@ const Login = () => {
       };
 
       const { data } = await loginUser(userData);
-      loginSuccess(data);
+      loginSuccess(data.details);
     } catch (err) {
       loginFailure();
       console.log(err);

@@ -5,16 +5,18 @@ import { Link } from 'react-router-dom';
 import Button from 'components/Button';
 import { registerUser } from 'services/userService';
 
+const initialState = {
+  name: '',
+  email: '',
+  username: '',
+  password: '',
+  passwordConfirm: '',
+};
+
 const Register = () => {
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [account, setAccount] = useState({
-    name: '',
-    email: '',
-    username: '',
-    password: '',
-    passwordConfirm: '',
-  });
+  const [account, setAccount] = useState(initialState);
 
   const handleChange = ({ target: input }) => {
     const { name, value } = input;

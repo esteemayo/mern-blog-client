@@ -89,7 +89,7 @@ const UserData = () => {
         type='text'
         id='name'
         placeholder={user.name}
-        onChange={(e) => setName(e.target.value)}
+        onChange={handleChange}
       />
       <label htmlFor='username'>Username</label>
       <input

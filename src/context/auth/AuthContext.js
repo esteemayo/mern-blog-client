@@ -21,7 +21,7 @@ if (token) {
   const expiredToken = Date.now();
 
   if (expiredToken > decodedToken.exp * 1000) {
-    localStorage.removeItem(tokenKey);
+    removeFromStorage(tokenKey);
   } else {
     initialState.user = decodedToken;
   }

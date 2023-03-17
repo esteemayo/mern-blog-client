@@ -13,7 +13,6 @@ const initialState = {
 
 const UserPassword = () => {
   const { inputs, setInputs } = useState(initialState);
-
   const { error, dispatch, updateSuccess, updateFailure } = useGlobalContext();
 
   const handleChange = ({ target: input }) => {

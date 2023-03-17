@@ -1,4 +1,5 @@
 import http from './httpService';
+import { tokenKey } from 'utils';
 
 const tokenKey = 'token';
 const apiEndPoint = '/users';

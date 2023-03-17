@@ -104,6 +104,7 @@ const UserData = () => {
       <input
         id='email'
         type='email'
+        name='email'
         placeholder={user.email}
         onChange={handleChange}
       />

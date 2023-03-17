@@ -45,6 +45,7 @@ const UserPassword = () => {
         <input
           type='password'
           id='passwordCurrent'
+          name='passwordCurrent'
           placeholder='********'
           onChange={handleChange}
         />

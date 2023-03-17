@@ -70,7 +70,7 @@ const UserPassword = () => {
           type='password'
           id='passwordConfirm'
           placeholder='********'
-          onChange={(e) => setPasswordConfirm(e.target.value)}
+          onChange={handleChange}
         />
         <Button text='Update' className='settingsSubmit' />
       </form>

@@ -1,5 +1,6 @@
 import jwtDecode from 'jwt-decode';
 import React, { useContext, useReducer, createContext } from 'react';
+
 import { getFromStorage, removeFromStorage, tokenKey } from 'utils';
 
 import Reducer from './AuthReducer';
@@ -52,7 +53,7 @@ const AuthProvider = ({ children }) => {
   };
 
   const logout = () => {
-    localStorage.removeItem(tokenKey);
+    removeFromStorage(tokenKey);
     dispatch({
       type: actions.LOGOUT,
     });

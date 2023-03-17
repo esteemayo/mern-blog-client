@@ -60,7 +60,10 @@ const AuthProvider = ({ children }) => {
   };
 
   const updateStart = () => {
-    dispatch({ type: actions.UPDATE_START });
+    dispatch({
+      type:
+        actions.UPDATE_START,
+    });
   };
 
   const updateSuccess = (userData) => {

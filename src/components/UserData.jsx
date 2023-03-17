@@ -96,7 +96,7 @@ const UserData = () => {
         type='text'
         id='username'
         placeholder={user.username}
-        onChange={(e) => setUsername(e.target.value)}
+        onChange={handleChange}
       />
       <label htmlFor='email'>Email</label>
       <input

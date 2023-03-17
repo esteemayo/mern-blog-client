@@ -22,6 +22,7 @@ if (token) {
 
   if (expiredToken > decodedToken.exp * 1000) {
     removeFromStorage(tokenKey);
+    initialState.user = null;
   } else {
     initialState.user = decodedToken;
   }

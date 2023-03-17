@@ -28,12 +28,6 @@ const UserPassword = () => {
     e.preventDefault();
     dispatch({ type: UPDATE_START });
 
-    const userData = {
-      password,
-      passwordCurrent,
-      passwordConfirm,
-    };
-
     try {
       const { data } = await updateUserPassword({ ...inputs });
       updateSuccess(data);

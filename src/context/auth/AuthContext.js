@@ -68,7 +68,9 @@ const AppProvider = ({ children }) => {
   };
 
   const updateFailure = () => {
-    dispatch({ type: actions.UPDATE_FAILURE });
+    dispatch({
+      type: actions.UPDATE_FAILURE,
+    });
   };
 
   return (

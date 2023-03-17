@@ -13,9 +13,6 @@ const initialState = {
 
 const UserPassword = () => {
   const { inputs, setInputs } = useState(initialState);
-  const [password, setPassword] = useState('');
-  const [passwordCurrent, setPasswordCurrent] = useState('');
-  const [passwordConfirm, setPasswordConfirm] = useState('');
 
   const { error, dispatch, updateSuccess, updateFailure } = useGlobalContext();
 

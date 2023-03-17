@@ -11,7 +11,6 @@ const initialState = {
   isFetching: false,
 };
 
-const tokenKey = 'token';
 const token = localStorage.getItem(tokenKey);
 
 if (token) {

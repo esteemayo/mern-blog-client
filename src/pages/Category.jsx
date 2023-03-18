@@ -11,7 +11,6 @@ const Category = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const data = { name };
 
   };
 

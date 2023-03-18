@@ -8,8 +8,8 @@ export const getPosts = (search) => http.get(`/posts${search}`);
 
 export const getPost = (postId) => http.get(postUrl(postId));
 
-export const getPostWithSlug = (slug) =>
-  http.get(`${apiEndPoint}/details/${slug}`);
+export const getPostWithSlug = (slug, token) =>
+  http.get(`${apiEndPoint}/details/${slug}`, { cancelToken: token });
 
 export const createPost = (post) => http.post(apiEndPoint, post);
 

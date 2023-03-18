@@ -51,6 +51,7 @@ const Register = () => {
           className='registerInput'
           placeholder='Enter your username...'
           onChange={handleChange}
+          autoFocus
         />
         <label htmlFor='username'>Username</label>
         <input

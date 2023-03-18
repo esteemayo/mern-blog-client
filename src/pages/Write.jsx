@@ -24,7 +24,11 @@ const Write = () => {
       const { data } = await getCategories(token);
       setCategories(data.docs);
     } catch (err) {
+      if (axios.isCancel(err)) {
+        console.log('cancelled');
+      } else {
         console.error(err);
+      }
     }
   };
 

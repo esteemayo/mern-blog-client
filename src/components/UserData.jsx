@@ -88,7 +88,6 @@ const UserData = () => {
       <input
         id='name'
         type='text'
-        id='name'
         name='name'
         placeholder={user.name}
         onChange={handleChange}

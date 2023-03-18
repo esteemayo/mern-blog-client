@@ -24,7 +24,7 @@ const Write = () => {
       const { data } = await getCategories(token);
       setCategories(data.docs);
     } catch (err) {
-      console.error(err);
+        console.error(err);
     }
   };
 

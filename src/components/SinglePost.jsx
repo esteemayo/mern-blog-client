@@ -21,7 +21,7 @@ const SinglePost = () => {
 
   useEffect(() => {
     const fetchPost = async () => {
-      const { data } = await postService.getPostWithSlug(slug);
+      const { data } = await postAPI.getPostWithSlug(slug);
       setPost(data.post);
       setTitle(data.post.title);
       setDescription(data.post.description);

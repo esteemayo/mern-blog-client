@@ -4,7 +4,8 @@ const apiEndPoint = '/posts';
 
 const postUrl = (postId) => `${apiEndPoint}/${postId}`;
 
-export const getPosts = (search, token) => http.get(`/posts${search}`, { cancelToken: token });
+export const getPosts = (search, token) =>
+  http.get(`/posts${search}`, { cancelToken: token });
 
 export const getPost = (postId) => http.get(postUrl(postId));
 

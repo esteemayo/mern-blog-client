@@ -13,6 +13,7 @@ const PF = 'http://localhost:8080/images/';
 const SinglePost = () => {
   const { slug } = useParams();
   const { user } = useGlobalContext();
+
   const [post, setPost] = useState({});
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');

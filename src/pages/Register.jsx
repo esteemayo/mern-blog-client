@@ -83,7 +83,6 @@ const Register = () => {
         <input
           type='password'
           id='passwordConfirm'
-          type='password'
           name='passwordConfirm'
           className='registerInput'
           placeholder='********'

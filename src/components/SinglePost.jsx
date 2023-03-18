@@ -4,6 +4,7 @@ import { FaEdit, FaTrashAlt } from 'react-icons/fa';
 import Moment from 'react-moment';
 import { Link } from 'react-router-dom';
 
+import Button from './Button';
 import { useGlobalContext } from 'context/auth/AuthContext';
 import * as postService from 'services/postService';
 import Button from './Button';

@@ -21,8 +21,12 @@ const Home = () => {
         setPosts(data.posts);
         setLoading(false);
       } catch (err) {
+        if (axios.isCancel(err)) {
+          console.log('cancelled');
+        } else {
           console.log(err);
           setLoading(false);
+        }
       }
     })();
   }, [search]);

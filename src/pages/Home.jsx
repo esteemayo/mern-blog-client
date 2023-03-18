@@ -13,14 +13,16 @@ const Home = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetchPosts();
+    (async () => {
+      try {
+        const { data } = await getPosts(search);
+        setPosts(data.posts);
+        setLoading(false);
+      } catch (err) {
+        console.log(err);
+      }
+    })();
   }, [search]);
-
-  const fetchPosts = async () => {
-    const { data } = await getPosts(search);
-    setPosts(data.posts);
-    setLoading(false);
-  };
 
   if (loading) {
     return <Spinner />;

@@ -22,7 +22,7 @@ const Login = () => {
         password: passwordRef.current.value,
       };
 
-      const { data } = await loginUser(userData);
+      const { data } = await loginUser({ ...userData });
       loginSuccess(data.details);
     } catch (err) {
       loginFailure();

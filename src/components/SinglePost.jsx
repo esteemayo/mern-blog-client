@@ -37,7 +37,7 @@ const SinglePost = () => {
         description,
       };
 
-      await postService.updatePost(post._id, postBody);
+      await postAPI.updatePost(post._id, postBody);
       setIsEditing(false);
     } catch (err) {
       console.error(err);

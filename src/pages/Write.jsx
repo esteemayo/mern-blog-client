@@ -91,6 +91,7 @@ const Write = () => {
           </div>
           <div className='writeFormGroup'>
             <select
+              id='categories'
               name='categories'
               id='categories'
               className='writeSelect'

@@ -86,6 +86,7 @@ const UserData = () => {
       </div>
       <label htmlFor='name'>Name</label>
       <input
+        id='name'
         type='text'
         id='name'
         name='name'

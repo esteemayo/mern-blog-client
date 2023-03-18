@@ -39,7 +39,7 @@ const UserData = () => {
       const data = new FormData();
       const fileName = Date.now() + file.name;
 
-      data.append('name', filename);
+      data.append('name', fileName);
       data.append('file', file);
       userData.avatar = filename;
       try {

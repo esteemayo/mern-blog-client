@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { FaEdit, FaTrashAlt } from 'react-icons/fa';
+import Moment from 'react-moment';
 import { Link } from 'react-router-dom';
 import Moment from 'react-moment';
 

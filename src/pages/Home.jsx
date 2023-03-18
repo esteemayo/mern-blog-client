@@ -7,6 +7,7 @@ import Posts from 'components/Posts';
 import SideBar from 'components/Sidebar';
 
 const Home = () => {
+  const { search } = useLocation();
   const [loading, setLoading] = useState(true);
   const [posts, setPosts] = useState([]);
   const { search } = useLocation();

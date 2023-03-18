@@ -32,7 +32,10 @@ const SinglePost = () => {
 
   const handleUpdate = async () => {
     try {
-      const postBody = { title, description };
+      const postBody = {
+        title,
+        description,
+      };
 
       await postService.updatePost(post._id, postBody);
       setIsEditing(false);

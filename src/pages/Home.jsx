@@ -6,7 +6,6 @@ import Header from 'components/Header';
 import { getPosts } from 'services/postService';
 import Posts from 'components/Posts';
 import SideBar from 'components/Sidebar';
-import axios from 'axios';
 
 const Home = () => {
   const { search } = useLocation();

@@ -53,8 +53,8 @@ const Write = () => {
     }
 
     try {
-      const { data: post } = await createPost(newPost);
-      window.location.replace(`/post/${post.data.post.slug}`);
+      const { data } = await createPost(newPost);
+      window.location.replace(`/post/${data.post.slug}`);
     } catch (err) {
       console.log(err.response.data.message);
     }

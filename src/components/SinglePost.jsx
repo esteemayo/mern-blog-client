@@ -8,7 +8,6 @@ import { Link } from 'react-router-dom';
 import Button from './Button';
 import { useGlobalContext } from 'context/auth/AuthContext';
 import * as postAPI from 'services/postAPI';
-import axios from 'axios';
 
 const PF = 'http://localhost:8080/images/';
 

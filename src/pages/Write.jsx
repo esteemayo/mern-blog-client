@@ -20,7 +20,8 @@ const Write = () => {
 
   const fetchCategory = async () => {
     try {
-      const { data } = await getCategories();
+      const { token } = axios.CancelToken.source();
+      const { data } = await getCategories(token);
       setCategories(data.docs);
     } catch (err) {
       console.error(err);

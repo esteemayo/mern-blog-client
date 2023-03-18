@@ -56,7 +56,6 @@ const Register = () => {
         <input
           type='text'
           id='username'
-          type='text'
           name='username'
           className='registerInput'
           placeholder='Enter your username...'

@@ -11,8 +11,8 @@ const Category = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-  };
+    await handleCreate();
+  };;
 
   const handleCreate = async () => {
     try {

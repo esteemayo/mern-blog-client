@@ -20,7 +20,6 @@ const UserData = () => {
 
   const [inputs, setInputs] = useState(initialState);
   const [file, setFile] = useState(null);
-  const [username, setUsername] = useState('');
   const [success, setSuccess] = useState(false);
 
   const handleChange = ({ target: input }) => {

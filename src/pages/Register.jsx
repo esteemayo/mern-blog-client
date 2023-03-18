@@ -54,6 +54,7 @@ const Register = () => {
         />
         <label htmlFor='username'>Username</label>
         <input
+          type='text'
           id='username'
           type='text'
           name='username'

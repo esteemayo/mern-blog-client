@@ -29,7 +29,11 @@ const SinglePost = () => {
         setTitle(data.post.title);
         setDescription(data.post.description);
       } catch (err) {
+        if (axios.isCancel(err)) {
+          console.log('cancelled');
+        } else {
           console.log(err);
+        }
       }
     })();
   }, [slug]);

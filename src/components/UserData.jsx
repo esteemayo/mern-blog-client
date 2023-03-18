@@ -41,7 +41,7 @@ const UserData = () => {
 
       data.append('name', fileName);
       data.append('file', file);
-      userData.avatar = filename;
+      userData.avatar = fileName;
       try {
         await upload(data);
       } catch (err) {

@@ -15,22 +15,20 @@ const Write = () => {
   const [description, setDescription] = useState('');
 
   useEffect(() => {
-    fetchCategory();
-  }, []);
-
-  const fetchCategory = async () => {
-    try {
-      const { token } = axios.CancelToken.source();
-      const { data } = await getCategories(token);
-      setCategories(data.docs);
-    } catch (err) {
-      if (axios.isCancel(err)) {
-        console.log('cancelled');
-      } else {
-        console.error(err);
+    (async () => {
+      try {
+        const { token } = axios.CancelToken.source();
+        const { data } = await getCategories(token);
+        setCategories(data.docs);
+      } catch (err) {
+        if (axios.isCancel(err)) {
+          console.log('cancelled');
+        } else {
+          console.error(err);
+        }
       }
-    }
-  };
+    })();
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();

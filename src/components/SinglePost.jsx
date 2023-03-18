@@ -29,7 +29,7 @@ const SinglePost = () => {
         setTitle(data.post.title);
         setDescription(data.post.description);
       } catch (err) {
-        console.log(err);
+          console.log(err);
       }
     })();
   }, [slug]);

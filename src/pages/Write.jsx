@@ -43,7 +43,7 @@ const Write = () => {
 
     if (file) {
       const data = new FormData();
-      const filename = Date.now() + file.name;
+      const fileName = Date.now() + file.name;
       data.append('name', filename);
       data.append('file', file);
       newPost.photo = filename;

@@ -10,7 +10,6 @@ const Home = () => {
   const { search } = useLocation();
   const [loading, setLoading] = useState(true);
   const [posts, setPosts] = useState([]);
-  const { search } = useLocation();
 
   useEffect(() => {
     fetchPosts();

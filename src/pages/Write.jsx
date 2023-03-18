@@ -45,6 +45,7 @@ const Write = () => {
       data.append('name', fileName);
       data.append('file', file);
       newPost.photo = fileName;
+
       try {
         await upload(data);
       } catch (err) {

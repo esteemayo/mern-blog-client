@@ -50,7 +50,7 @@ const UserData = () => {
     }
 
     try {
-      const { data } = await updateUserData(userData);
+      const { data } = await updateUserData({ ...userData });
       updateSuccess(data);
       setSuccess(true);
       window.location.reload();

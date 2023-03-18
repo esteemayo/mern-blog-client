@@ -5,6 +5,7 @@ import Button from 'components/Button';
 import { getCategories } from 'services/categoryService';
 import { upload } from 'services/uploadService';
 import { createPost } from 'services/postService';
+import axios from 'axios';
 
 const Write = () => {
   const [file, setFile] = useState(null);

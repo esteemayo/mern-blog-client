@@ -12,7 +12,7 @@ const initialState = {
   name: '',
   email: '',
   username: '',
-}
+};
 
 const UserData = () => {
   const { user, dispatch, isFetching, updateSuccess, updateFailure } =

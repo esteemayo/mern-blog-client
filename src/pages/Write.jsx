@@ -96,7 +96,7 @@ const Write = () => {
               className='writeSelect'
               onChange={(e) => setCategory(e.target.value)}
             >
-              <option value=''>select a category</option>
+              <option>select a category</option>
               {categories.map((category) => {
                 return (
                   <option key={category._id} value={category.name}>

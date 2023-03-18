@@ -19,7 +19,6 @@ const UserData = () => {
     useGlobalContext();
 
   const [inputs, setInputs] = useState(initialState);
-  const [email, setEmail] = useState('');
   const [file, setFile] = useState(null);
   const [username, setUsername] = useState('');
   const [success, setSuccess] = useState(false);

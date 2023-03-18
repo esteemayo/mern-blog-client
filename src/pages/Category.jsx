@@ -13,6 +13,9 @@ const Category = () => {
     e.preventDefault();
     const data = { name };
 
+  };
+
+  const handleCreate = async () => {
     try {
       await createCategory(data);
       window.location.reload();

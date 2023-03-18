@@ -21,6 +21,7 @@ const UserData = () => {
   const [inputs, setInputs] = useState(initialState);
   const [file, setFile] = useState(null);
   const [success, setSuccess] = useState(false);
+  const [inputs, setInputs] = useState(initialState);
 
   const handleChange = ({ target: input }) => {
     const { name, value } = input;

@@ -15,7 +15,9 @@ const Post = ({ slug, photo, title, category, createdAt, description }) => {
           <span className='postTitle'>{title}</span>
         </Link>
         <hr />
-        <span className='postDate'>{new Date(createdAt).toDateString()}</span>
+        <span className='postDate'>
+          {new Date(createdAt).toDateString()}
+        </span>
       </div>
       <p className='postDesc'>{description}</p>
     </div>

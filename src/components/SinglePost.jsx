@@ -20,14 +20,16 @@ const SinglePost = () => {
   const [isEditing, setIsEditing] = useState(false);
 
   useEffect(() => {
-    const fetchPost = async () => {
-      const { data } = await postAPI.getPostWithSlug(slug);
-      setPost(data.post);
-      setTitle(data.post.title);
-      setDescription(data.post.description);
-    };
-
-    fetchPost();
+    slug && (async () => {
+      try {
+        const { data } = await postAPI.getPostWithSlug(slug);
+        setPost(data.post);
+        setTitle(data.post.title);
+        setDescription(data.post.description);
+      } catch (err) {
+        console.log(err);
+      }
+    })();
   }, [slug]);
 
   const handleUpdate = async () => {

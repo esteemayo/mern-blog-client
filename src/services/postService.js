@@ -7,7 +7,8 @@ const postUrl = (postId) => `${apiEndPoint}/${postId}`;
 export const getPosts = (search, token) =>
   http.get(`/posts${search}`, { cancelToken: token });
 
-export const getPost = (postId, token) => http.get(postUrl(postId), { cancelToken: token });
+export const getPost = (postId, token) =>
+  http.get(postUrl(postId), { cancelToken: token });
 
 export const getPostWithSlug = (slug, token) =>
   http.get(`${apiEndPoint}/details/${slug}`, { cancelToken: token });

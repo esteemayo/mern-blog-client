@@ -16,7 +16,7 @@ const Category = () => {
 
   const handleCreate = async () => {
     try {
-      await createCategory(data);
+      await createCategory(name);
       window.location.reload();
     } catch (err) {
       console.log(err.response.data.message);

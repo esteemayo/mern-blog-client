@@ -29,7 +29,7 @@ const Register = () => {
     setLoading(true);
 
     try {
-      const res = await registerUser(account);
+      const res = await registerUser({ ...account });
       setLoading(false);
       res.data && window.location.replace('/auth/login');
     } catch (err) {

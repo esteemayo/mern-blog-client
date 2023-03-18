@@ -4,7 +4,6 @@ import { Redirect } from 'react-router-dom';
 import Button from 'components/Button';
 import { useGlobalContext } from 'context/auth/AuthContext';
 import { createCategory } from 'services/categoryService';
-import axios from 'axios';
 
 const Category = () => {
   const { user } = useGlobalContext();

@@ -93,7 +93,6 @@ const Write = () => {
             <select
               id='categories'
               name='categories'
-              id='categories'
               className='writeSelect'
               onChange={(e) => setCategory(e.target.value)}
             >

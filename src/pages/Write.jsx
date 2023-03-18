@@ -109,7 +109,6 @@ const Write = () => {
           <div className='writeFormGroup'>
             <textarea
               placeholder='Tell your story...'
-              type='text'
               className='writeInput writeText'
               onChange={(e) => setDescription(e.target.value)}
             ></textarea>

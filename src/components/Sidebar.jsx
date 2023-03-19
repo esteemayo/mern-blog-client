@@ -27,6 +27,9 @@ const SideBar = () => {
       data: { docs },
     } = await getCategories(token);
     return docs;
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   return (

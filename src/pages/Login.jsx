@@ -54,7 +54,6 @@ const Login = () => {
         <Button
           text='Login'
           className='loginButton'
-          text='Login'
           disabled={isFetching}
         />
       </form>

@@ -31,8 +31,8 @@ const SideBar = () => {
       if (axios.isCancel(err)) {
         console.log('cancelled');
       } else {
-      console.log(err);
-    }
+        console.log(err);
+      }
     }
   };
 

@@ -14,7 +14,7 @@ const SideBar = () => {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
-    (async function getCats() {
+    (async () => {
       const catsFromServer = await fetchCategories();
       setCategories(catsFromServer);
     })();

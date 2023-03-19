@@ -53,6 +53,7 @@ const SideBar = () => {
         <span className='sidebarTitle'>CATEGORIES</span>
         <ul className='sidebarList'>
           {categories?.map((category) => {
+            const { _id: id, name } = category;
             return (
               <Link
                 key={category._id}

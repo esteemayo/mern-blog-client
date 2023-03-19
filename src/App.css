@@ -314,7 +314,7 @@ body {
 }
 
 .settingsDeleteTitle {
-  color: red;
+  color: #f00;
   font-size: 12px;
   cursor: pointer;
 }

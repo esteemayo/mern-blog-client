@@ -33,6 +33,7 @@ const SideBar = () => {
       } else {
       console.log(err);
     }
+    }
   };
 
   return (

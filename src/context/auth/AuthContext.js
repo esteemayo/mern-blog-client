@@ -4,7 +4,12 @@ import React, { useContext, useReducer, createContext } from 'react';
 import Reducer from './AuthReducer';
 import { getJwt } from 'services/userService';
 import * as actions from './AuthTypes';
-import { getFromStorage, removeFromStorage, setToStorage, tokenKey } from 'utils';
+import {
+  getFromStorage,
+  removeFromStorage,
+  setToStorage,
+  tokenKey,
+} from 'utils';
 
 const token = getJwt();
 const user = getFromStorage(tokenKey)

@@ -8,6 +8,7 @@ import {
 } from 'react-icons/fa';
 
 import { getCategories } from '../services/categoryService';
+import axios from 'axios';
 
 const SideBar = () => {
   const [categories, setCategories] = useState([]);

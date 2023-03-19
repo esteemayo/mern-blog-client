@@ -28,6 +28,9 @@ const SideBar = () => {
       } = await getCategories(token);
       return docs;
     } catch (err) {
+      if (axios.isCancel(err)) {
+        console.log('cancelled');
+      } else {
       console.log(err);
     }
   };

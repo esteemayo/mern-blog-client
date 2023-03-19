@@ -2,6 +2,7 @@ import axios from 'axios';
 import { toast } from 'react-toastify';
 
 import logger from './logService';
+import { getJwt } from './userService';
 
 const devEnv = process.env.NODE_ENV !== 'production';
 const { REACT_APP_DEV_API_URL, REACT_APP_PROD_API_URL } = process.env;

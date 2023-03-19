@@ -57,7 +57,7 @@ const SideBar = () => {
             return (
               <Link
                 key={id}
-                to={`/?category=${category.name}`}
+                to={`/?category=${name}`}
                 className='link'
               >
                 <li className='sidebarListItem'>{category.name}</li>

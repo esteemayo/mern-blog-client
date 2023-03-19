@@ -42,7 +42,6 @@ const http = {
   post: API.post,
   patch: API.patch,
   delete: API.delete,
-  setJwt,
 };
 
 export default http;

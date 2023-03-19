@@ -600,7 +600,7 @@ body {
   border: none;
   background-color: teal;
   padding: 5px;
-  color: white;
+  color: #fff;
   border-radius: 5px;
   cursor: pointer;
   align-self: flex-end;

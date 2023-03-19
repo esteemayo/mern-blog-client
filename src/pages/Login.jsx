@@ -51,7 +51,11 @@ const Login = () => {
           placeholder='********'
           ref={passwordRef}
         />
-        <Button className='loginButton' text='Login' disabled={isFetching} />
+        <Button
+          className='loginButton'
+          text='Login'
+          disabled={isFetching}
+        />
       </form>
       <Button className='loginRegisterButton'>
         <Link className='link' to='/users/register'>

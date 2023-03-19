@@ -22,7 +22,7 @@ const SideBar = () => {
 
   const fetchCategories = async () => {
     try {
-      const { token } = await axios.CancelToken.source();
+      const { token } = axios.CancelToken.source();
       const {
         data: { docs },
       } = await getCategories(token);

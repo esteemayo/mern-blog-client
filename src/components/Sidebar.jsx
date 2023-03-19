@@ -56,7 +56,7 @@ const SideBar = () => {
             const { _id: id, name } = category;
             return (
               <Link
-                key={category._id}
+                key={id}
                 to={`/?category=${category.name}`}
                 className='link'
               >

@@ -60,7 +60,7 @@ const SideBar = () => {
                 to={`/?category=${name}`}
                 className='link'
               >
-                <li className='sidebarListItem'>{category.name}</li>
+                <li className='sidebarListItem'>{name}</li>
               </Link>
             );
           })}

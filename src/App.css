@@ -273,7 +273,7 @@ body {
 .registerButton {
   margin-top: 20px;
   cursor: pointer;
-  background-color: teal;
+  background-color: #008080;
   border: none;
   color: #fff;
   border-radius: 10px;

@@ -6,7 +6,13 @@ const Post = ({ slug, photo, title, category, createdAt, description }) => {
 
   return (
     <div className='post'>
-      {photo && <img className='postImg' src={PF + photo} alt='' />}
+      {photo && (
+        <img
+          className='postImg'
+          src={PF + photo}
+          alt=''
+        />
+      )}
       <div className='postInfo'>
         <div className='postCats'>
           <span className='postCat'>{category}</span>

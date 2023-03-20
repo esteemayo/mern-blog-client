@@ -18,7 +18,6 @@ import {
 } from './pages';
 
 import 'react-toastify/dist/ReactToastify.css';
-import './App.css';
 
 function App() {
   return (

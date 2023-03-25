@@ -23,7 +23,7 @@ const Category = () => {
     }
   };
 
-  if (user?.role !== 'admin') return <Redirect to='/' />;
+  if (user && user.role !== 'admin') return <Redirect to='/' />;
 
   return (
     <form className='writeForm' onSubmit={handleSubmit}>

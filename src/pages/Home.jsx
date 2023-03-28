@@ -6,8 +6,6 @@ import Posts from 'components/Posts';
 import SideBar from 'components/Sidebar';
 import Header from 'components/Header';
 import { getPosts } from 'services/postService';
-import Posts from 'components/Posts';
-import SideBar from 'components/Sidebar';
 import Spinner from 'components/Spinner';
 
 const Home = () => {

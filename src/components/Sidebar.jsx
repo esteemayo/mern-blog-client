@@ -8,7 +8,7 @@ import {
   FaInstagramSquare,
 } from 'react-icons/fa';
 
-import { getCategories } from 'services/categoryService';
+import { getCategories } from '../services/categoryService';
 
 const SideBar = () => {
   const [categories, setCategories] = useState([]);

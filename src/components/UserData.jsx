@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaUserCircle } from 'react-icons/fa';
 
-import { updateUserData } from 'services/userService';
+import { updateUserData } from '../services/userService';
 import { upload } from 'services/uploadService';
 import { useGlobalContext } from 'context/auth/AuthContext';
 import { UPDATE_START } from 'context/auth/AuthTypes';

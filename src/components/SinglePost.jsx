@@ -6,7 +6,7 @@ import Moment from 'react-moment';
 import { Link } from 'react-router-dom';
 
 import Button from './Button';
-import { useGlobalContext } from 'context/auth/AuthContext';
+import { useGlobalContext } from '../context/auth/AuthContext';
 import * as postAPI from 'services/postAPI';
 
 const PF = 'http://localhost:8080/images/';

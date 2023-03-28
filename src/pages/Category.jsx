@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Redirect } from 'react-router-dom';
 
 import Button from '../components/Button';
-import { useGlobalContext } from 'context/auth/AuthContext';
+import { useGlobalContext } from '../context/auth/AuthContext';
 import { createCategory } from 'services/categoryService';
 
 const Category = () => {

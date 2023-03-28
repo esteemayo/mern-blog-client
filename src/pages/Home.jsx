@@ -6,7 +6,7 @@ import Posts from '../components/Posts';
 import SideBar from '../components/Sidebar';
 import Header from '../components/Header';
 import { getPosts } from '../services/postService';
-import Spinner from 'components/Spinner';
+import Spinner from '../components/Spinner';
 
 const Home = () => {
   const { search } = useLocation();

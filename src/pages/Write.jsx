@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { FaPlus } from 'react-icons/fa';
 
 import Button from '../components/Button';
-import { getCategories } from 'services/categoryService';
+import { getCategories } from '../services/categoryService';
 import { upload } from 'services/uploadService';
 import { createPost } from 'services/postService';
 

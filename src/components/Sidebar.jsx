@@ -52,7 +52,7 @@ const SideBar = () => {
       <div className='sidebarItem'>
         <span className='sidebarTitle'>CATEGORIES</span>
         <ul className='sidebarList'>
-          {categories?.map((category) => {
+          {categories.map((category) => {
             const { _id: id, name } = category;
             return (
               <Link

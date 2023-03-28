@@ -3,7 +3,7 @@ import { Redirect } from 'react-router-dom';
 
 import Button from '../components/Button';
 import { useGlobalContext } from '../context/auth/AuthContext';
-import { createCategory } from 'services/categoryService';
+import { createCategory } from '../services/categoryService';
 
 const Category = () => {
   const { user } = useGlobalContext();

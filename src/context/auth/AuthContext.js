@@ -15,7 +15,7 @@ const token = getJwt();
 const user = getFromStorage(tokenKey)
 
 const initialState = {
-  user: user ?? null,
+  user: user ? user : null,
   error: false,
   isFetching: false,
 };

@@ -3,7 +3,7 @@ import { FaSpinner } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 import Button from '../components/Button';
-import { registerUser } from 'services/userService';
+import { registerUser } from '../services/userService';
 
 const initialState = {
   name: '',

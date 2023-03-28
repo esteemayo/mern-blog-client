@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 
-import Topbar from 'components/TopBar';
+import Topbar from './components/TopBar';
 import ProtectedRoute from './utils/ProtectedRoute';
 import AuthRoute from './utils/AuthRoute';
 import {

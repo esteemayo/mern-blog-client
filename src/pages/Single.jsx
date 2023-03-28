@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SideBar from 'components/Sidebar';
+import SideBar from '../components/Sidebar';
 import SinglePost from 'components/SinglePost';
 
 const Single = () => {

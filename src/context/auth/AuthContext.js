@@ -9,7 +9,7 @@ import {
   removeFromStorage,
   setToStorage,
   tokenKey,
-} from 'utils';
+} from '../../utils';
 
 const token = getJwt();
 const user = getFromStorage(tokenKey)

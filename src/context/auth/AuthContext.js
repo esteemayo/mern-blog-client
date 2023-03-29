@@ -1,7 +1,7 @@
 import jwtDecode from 'jwt-decode';
 import React, { useContext, useReducer, createContext } from 'react';
 
-import Reducer from './AuthReducer';
+import AuthReducer from './AuthReducer';
 import * as actions from './AuthTypes';
 import {
   getFromStorage,

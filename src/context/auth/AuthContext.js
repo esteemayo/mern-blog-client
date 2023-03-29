@@ -11,7 +11,7 @@ import {
 } from '../../utils';
 
 const user = getFromStorage(tokenKey);
-const token = getFromStorage(tokenKey).token;
+const token = user && getFromStorage(tokenKey).token;
 
 const initialState = {
   user: user ? user : null,

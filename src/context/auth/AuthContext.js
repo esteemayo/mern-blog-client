@@ -10,6 +10,7 @@ import {
   tokenKey,
 } from '../../utils';
 
+const user = getFromStorage(tokenKey);
 const token = getFromStorage(tokenKey).token;
 const user = getFromStorage(tokenKey);
 

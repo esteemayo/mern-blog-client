@@ -40,10 +40,10 @@ axios.interceptors.response.use(null, (error) => {
 });
 
 const http = {
-  get: API.get,
-  post: API.post,
-  patch: API.patch,
-  delete: API.delete,
+  get: axios.get,
+  post: axios.post,
+  patch: axios.patch,
+  delete: axios.delete,
 };
 
 export default http;

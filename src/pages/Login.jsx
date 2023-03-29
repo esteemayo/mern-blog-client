@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 import Button from '../components/Button';
 import { useGlobalContext } from '../context/auth/AuthContext';

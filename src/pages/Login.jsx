@@ -31,7 +31,9 @@ const Login = () => {
     }
   };
 
-  useEffect(() => { })
+  useEffect(() => {
+    error && toast.error(message);
+  }, [error, message]);
 
   return (
     <div className='login'>

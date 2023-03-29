@@ -30,6 +30,7 @@ const http = {
   post: axios.post,
   patch: axios.patch,
   delete: axios.delete,
+  setJwt,
 };
 
 export default http;

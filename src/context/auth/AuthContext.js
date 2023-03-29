@@ -54,6 +54,7 @@ const AuthProvider = ({ children }) => {
   const loginFailure = (error) => {
     dispatch({
       type: actions.LOGIN_FAILURE,
+      payload: error,
     });
   };
 

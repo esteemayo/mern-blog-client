@@ -12,7 +12,6 @@ import {
 
 const user = getFromStorage(tokenKey);
 const token = getFromStorage(tokenKey).token;
-const user = getFromStorage(tokenKey);
 
 const initialState = {
   user: user ? user : null,

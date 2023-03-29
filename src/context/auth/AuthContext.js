@@ -34,7 +34,7 @@ if (token) {
 const AuthContext = createContext();
 
 const AuthProvider = ({ children }) => {
-  const [state, dispatch] = useReducer(Reducer, initialState);
+  const [state, dispatch] = useReducer(AuthReducer, initialState);
 
   const loginStart = () => {
     dispatch({

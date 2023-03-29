@@ -30,6 +30,8 @@ const Login = () => {
     }
   };
 
+  useEffect(() => { })
+
   return (
     <div className='login'>
       <span className='loginTitle'>Login</span>

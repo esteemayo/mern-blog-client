@@ -65,4 +65,4 @@ const AuthReducer = (state, { type, payload }) => {
   throw new Error('No matching action type');
 };
 
-export default Reducer;
+export default AuthReducer;

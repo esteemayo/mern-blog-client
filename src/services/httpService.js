@@ -17,7 +17,7 @@ const API = axios.create({
   },
 });
 
-API.interceptors.request.use((req) => {
+axios.interceptors.request.use((req) => {
   req.headers.common['Authorization'] = `Bearer ${getJwt()}`;
   return req;
 }, (error) => {

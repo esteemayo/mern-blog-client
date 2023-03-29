@@ -21,6 +21,10 @@ axios.interceptors.response.use(null, (error) => {
   return Promise.reject(error);
 });
 
+const setJwt = (token) => {
+  axios.defaults.headers.common['Authorization'] = token;
+};
+
 const http = {
   get: axios.get,
   post: axios.post,

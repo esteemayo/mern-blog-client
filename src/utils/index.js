@@ -2,7 +2,7 @@ export const tokenKey = 'token';
 
 export const getFromStorage = (key) => {
   if (typeof window !== 'undefined')
-  return JSON.parse(localStorage.getItem(key));
+    return JSON.parse(localStorage.getItem(key));
 }
 
 export const setToStorage = (key, value) => {

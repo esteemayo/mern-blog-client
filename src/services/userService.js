@@ -3,6 +3,8 @@ import { getFromStorage, tokenKey } from '../utils';
 
 const apiEndPoint = '/users';
 
+http.setJwt(getJwt);
+
 export const registerUser = (userData) =>
   http.post(`${apiEndPoint}/signup`, userData);
 

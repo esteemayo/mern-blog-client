@@ -1,6 +1,6 @@
 import * as actions from './AuthTypes';
 
-const Reducer = (state, { type, payload }) => {
+const AuthReducer = (state, { type, payload }) => {
   if (type === actions.LOGIN_START) {
     return {
       ...state,

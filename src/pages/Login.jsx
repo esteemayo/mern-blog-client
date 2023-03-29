@@ -25,7 +25,7 @@ const Login = () => {
       const { data } = await loginUser({ ...userData });
       loginSuccess(data.details);
     } catch (err) {
-      loginFailure();
+      loginFailure(err.response.data);
       console.log(err);
     }
   };

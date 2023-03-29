@@ -2,7 +2,6 @@ import axios from 'axios';
 import { toast } from 'react-toastify';
 
 import logger from './logService';
-import { getJwt } from './userService';
 
 axios.defaults.baseURL = 'http://localhost:8080/api/v1';
 

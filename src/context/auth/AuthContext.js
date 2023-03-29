@@ -17,6 +17,7 @@ const initialState = {
   user: user ? user : null,
   error: false,
   isFetching: false,
+  message: '',
 };
 
 if (token) {

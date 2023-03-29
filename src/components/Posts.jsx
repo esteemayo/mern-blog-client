@@ -13,15 +13,4 @@ const Posts = ({ posts }) => {
   );
 };
 
-Posts.propTypes = {
-  posts: PropTypes.shape({
-    _id: PropTypes.string.isRequired,
-    slug: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    category: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    createdAt: PropTypes.string.isRequired,
-  }),
-};
-
 export default Posts;

@@ -25,6 +25,7 @@ const AuthReducer = (state, { type, payload }) => {
       user: null,
       error: true,
       isFetching: false,
+      message: payload.message,
     };
   }
 

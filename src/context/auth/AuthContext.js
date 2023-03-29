@@ -44,7 +44,7 @@ const AuthProvider = ({ children }) => {
   };
 
   const loginSuccess = (userData) => {
-    localStorage.setItem(tokenKey, userData);
+    setToStorage(tokenKey, userData);
     dispatch({
       type: actions.LOGIN_SUCCESS,
       payload: userData,

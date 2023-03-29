@@ -24,7 +24,7 @@ axios.interceptors.request.use((req) => {
   return Promise.reject(error);
 });
 
-API.interceptors.response.use(null, (error) => {
+axios.interceptors.response.use(null, (error) => {
   const expectedError =
     error.response &&
     error.response.status >= 400 &&

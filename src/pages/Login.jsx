@@ -6,6 +6,7 @@ import Button from '../components/Button';
 import { useGlobalContext } from '../context/auth/AuthContext';
 import { loginUser } from '../services/userService';
 import { LOGIN_START } from '../context/auth/AuthTypes';
+import Loader from '../components/Loader';
 
 const Login = () => {
   const { error, message, isFetching, dispatch, loginSuccess, loginFailure } =

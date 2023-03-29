@@ -9,14 +9,6 @@ const { REACT_APP_DEV_API_URL, REACT_APP_PROD_API_URL } = process.env;
 
 axios.defaults.baseURL = 'http://localhost:8080/api/v1';
 
-const API = axios.create({
-  baseURL: devEnv ? REACT_APP_DEV_API_URL : REACT_APP_PROD_API_URL,
-  headers: {
-    Accept: 'application/json',
-    'Content-Type': 'application/json',
-  },
-});
-
 axios.interceptors.request.use((req) => {
   req.headers.common['Authorization'] = `Bearer ${getJwt()}`;
   return req;

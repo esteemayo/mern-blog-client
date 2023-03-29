@@ -31,4 +31,14 @@ const Post = ({ slug, photo, title, category, createdAt, description }) => {
   );
 };
 
+Post.propTypes = {
+  _id: PropTypes.string.isRequired,
+  slug: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  photo: PropTypes.string.isRequired,
+  category: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  createdAt: PropTypes.string.isRequired,
+};
+
 export default Post;

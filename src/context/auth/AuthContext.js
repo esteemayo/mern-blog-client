@@ -51,7 +51,7 @@ const AuthProvider = ({ children }) => {
     });
   };
 
-  const loginFailure = () => {
+  const loginFailure = (error) => {
     dispatch({
       type: actions.LOGIN_FAILURE,
     });

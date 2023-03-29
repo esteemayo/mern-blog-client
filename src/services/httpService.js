@@ -6,13 +6,6 @@ import { getJwt } from './userService';
 
 axios.defaults.baseURL = 'http://localhost:8080/api/v1';
 
-axios.interceptors.request.use((req) => {
-  req.headers.common['Authorization'] = `Bearer ${getJwt()}`;
-  return req;
-}, (error) => {
-  return Promise.reject(error);
-});
-
 axios.interceptors.response.use(null, (error) => {
   const expectedError =
     error.response &&

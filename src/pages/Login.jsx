@@ -7,7 +7,7 @@ import { loginUser } from '../services/userService';
 import { LOGIN_START } from '../context/auth/AuthTypes';
 
 const Login = () => {
-  const { isFetching, dispatch, loginSuccess, loginFailure } =
+  const { error, isFetching, dispatch, loginSuccess, loginFailure } =
     useGlobalContext();
   const passwordRef = useRef(null);
   const userRef = useRef(null);

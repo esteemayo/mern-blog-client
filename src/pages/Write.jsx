@@ -53,6 +53,7 @@ const Write = () => {
       try {
         await upload(data);
       } catch (err) {
+        setLoading(false);
         console.log(err);
       }
     }

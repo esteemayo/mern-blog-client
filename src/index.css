@@ -735,6 +735,9 @@ body {
   height: 20px;
 }
 
+.loader .md {
+}
+
 @keyframes rotate {
   to {
     transform: rotate(360deg);

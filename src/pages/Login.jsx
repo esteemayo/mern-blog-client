@@ -59,7 +59,7 @@ const Login = () => {
         />
         <Button
           text={isFetching ? null : 'Login'}
-          icon={isFetching && <Loader size='sm' />}
+          icon={isFetching ? <Loader size='sm' /> : null}
           className='loginButton'
           disabled={isFetching}
         />

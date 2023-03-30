@@ -619,7 +619,7 @@ body {
   border: none;
   background-color: #008080;
   padding: 5px;
-  color: #fff;
+  color: var(--clr-white);
   border-radius: 5px;
   cursor: pointer;
   align-self: flex-end;

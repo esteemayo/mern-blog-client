@@ -61,7 +61,9 @@ const Login = () => {
           text={isFetching ? null : 'Login'}
           className='loginButton'
           disabled={isFetching}
-        />
+        >
+          {isFetching ? <Loader size='sm' /> : null}
+        </Button>
       </form>
       <Button className='loginRegisterButton'>
         <Link className='link' to='/users/register'>

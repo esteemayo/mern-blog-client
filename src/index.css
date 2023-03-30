@@ -357,7 +357,7 @@ body {
   height: 25px;
   border-radius: 50%;
   background-color: lightcoral;
-  color: #fff;
+  color: var(--clr-white);
   display: flex;
   align-items: center;
   justify-content: center;

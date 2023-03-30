@@ -26,7 +26,7 @@ const Post = ({ slug, photo, title, category, createdAt, description }) => {
           {new Date(createdAt).toDateString()}
         </span>
       </div>
-      <p className='postDesc'>{description}</p>
+      <p className='postDesc'>{description.substr(0, 200)}...</p>
     </div>
   );
 };

@@ -278,7 +278,7 @@ body {
 
 .registerInput {
   padding: 10px;
-  background-color: #fff;
+  background-color: var(--clr-white);
   border: none;
 }
 

@@ -740,6 +740,9 @@ body {
   height: 50px;
 }
 
+.loader .lg {
+}
+
 @keyframes rotate {
   to {
     transform: rotate(360deg);

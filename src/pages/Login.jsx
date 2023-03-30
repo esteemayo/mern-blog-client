@@ -58,7 +58,7 @@ const Login = () => {
           ref={passwordRef}
         />
         <Button
-          text='Login'
+          text={isFetching ? <Loader /> : 'Login'}
           className='loginButton'
           disabled={isFetching}
         />

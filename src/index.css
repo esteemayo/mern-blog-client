@@ -290,7 +290,7 @@ body {
   cursor: pointer;
   background-color: #008080;
   border: none;
-  color: #fff;
+  color: var(--clr-white);
   border-radius: 10px;
   padding: 10px;
 }

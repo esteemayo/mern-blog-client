@@ -119,6 +119,7 @@ const Write = () => {
             ></textarea>
           </div>
           <Button
+            className='writeSubmit'
             text={!loading ? 'Publish' : null}
             className='writeSubmit'
           >

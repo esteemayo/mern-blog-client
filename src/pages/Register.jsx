@@ -35,6 +35,7 @@ const Register = () => {
       res.data && window.location.replace('/auth/login');
     } catch (err) {
       console.error(err);
+      setLoading(false);
       setError(true);
     }
   };

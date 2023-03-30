@@ -738,7 +738,7 @@ body {
   height: 50px;
 }
 
-.loader .lg {
+.loader.lg {
   width: 100px;
   height: 100px;
 }

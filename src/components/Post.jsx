@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 const Post = ({ slug, photo, title, category, createdAt, description }) => {
+  const [readMore, setReadMore] = useState(false);
   const PF = 'http://localhost:8080/images/';
 
   return (

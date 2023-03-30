@@ -92,7 +92,7 @@ const Register = () => {
           onChange={handleChange}
         />
         <button className='registerButton' type='submit'>
-          {loading ? <FaSpinner /> : 'Register'}
+          {loading ? <Loader size='sm' /> : 'Register'}
         </button>
       </form>
       <Button className='registerLoginButton'>

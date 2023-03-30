@@ -118,7 +118,7 @@ const Write = () => {
               onChange={(e) => setDescription(e.target.value)}
             ></textarea>
           </div>
-          <Button text='Publish' className='writeSubmit'>
+          <Button text={!loading ? 'Publish' : null} className='writeSubmit'>
             {loading ? <Loader size='sm' /> : null}
           </Button>
         </form>

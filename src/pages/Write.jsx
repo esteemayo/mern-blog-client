@@ -33,6 +33,7 @@ const Write = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
 
     const newPost = {
       title,
@@ -57,8 +58,10 @@ const Write = () => {
 
     try {
       const { data: { post } } = await createPost({ ...newPost });
+      setLoading(false);
       window.location.replace(`/post/${post.slug}`);
     } catch (err) {
+      setLoading(false);
       console.log(err.response.data.message);
     }
   };

@@ -728,7 +728,7 @@ body {
   height: 10px;
 }
 
-.loader .sm {
+.loader.sm {
   width: 20px;
   height: 20px;
 }

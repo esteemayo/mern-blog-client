@@ -279,6 +279,9 @@ body {
 }
 
 .registerButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 20px;
   cursor: pointer;
   background-color: #008080;

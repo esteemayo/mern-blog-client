@@ -730,6 +730,9 @@ body {
   height: 20px;
 }
 
+.loader .sm {
+}
+
 @keyframes rotate {
   to {
     transform: rotate(360deg);

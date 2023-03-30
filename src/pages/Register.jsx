@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 import Button from '../components/Button';
 import { registerUser } from '../services/userService';
+import Loader from '../components/Loader';
 
 const initialState = {
   name: '',

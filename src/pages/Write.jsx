@@ -11,6 +11,7 @@ const Write = () => {
   const [file, setFile] = useState(null);
   const [title, setTitle] = useState('');
   const [category, setCategory] = useState('');
+  const [loading, setLoading] = useState(false);
   const [categories, setCategories] = useState([]);
   const [description, setDescription] = useState('');
 

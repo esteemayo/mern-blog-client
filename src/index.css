@@ -741,6 +741,8 @@ body {
 }
 
 .loader .lg {
+  width: 100px;
+  height: 100px;
 }
 
 @keyframes rotate {

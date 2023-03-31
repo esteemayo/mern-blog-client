@@ -393,6 +393,8 @@ body {
 }
 
 .space {
+  height: 3px;
+  margin: 50px 0;
 }
 
 .single {

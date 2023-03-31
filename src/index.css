@@ -412,6 +412,9 @@ body {
   cursor: not-allowed;
 }
 
+.errorMsg {
+}
+
 .space {
   height: 3px;
   margin: 50px 0;

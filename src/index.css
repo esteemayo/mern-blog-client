@@ -393,7 +393,7 @@ body {
 
 .settingsSubmit {
   border: none;
-  display: inline-block;
+  display: flex;
   width: 100%;
   align-self: center;
   border-radius: 5px;

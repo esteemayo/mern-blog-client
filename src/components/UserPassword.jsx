@@ -66,7 +66,9 @@ const UserPassword = () => {
           placeholder='********'
           onChange={handleChange}
         />
-        <Button text='Update' className='settingsSubmit' />
+        <Button text={!isFetching && 'Update'} className='settingsSubmit'>
+          {isFetching ? <Loader size='sm' /> : null}
+        </Button>
       </form>
       {error && (
         <span style={{ color: 'red', marginTop: '10px', textAlign: 'center' }}>

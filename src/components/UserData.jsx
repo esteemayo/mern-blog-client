@@ -48,7 +48,6 @@ const UserData = () => {
       try {
         await upload(data);
       } catch (err) {
-        setLoading(false);
         console.error(err);
       }
     }

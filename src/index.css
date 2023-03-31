@@ -391,6 +391,7 @@ body {
 }
 
 .settingsSubmit {
+  border: none;
   width: 150px;
   align-self: center;
   border: none;

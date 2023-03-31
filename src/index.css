@@ -413,6 +413,7 @@ body {
 }
 
 .errorMsg {
+  font-size: 15px;
   color: #f00;
   margin: 10px 0;
 }

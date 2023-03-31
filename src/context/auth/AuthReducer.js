@@ -29,6 +29,15 @@ const AuthReducer = (state, { type, payload }) => {
     };
   }
 
+  if (type === actions.RESET) {
+    return {
+      ...state,
+      error: false,
+      isFetching: false,
+      message: '',
+    };
+  }
+
   if (type === actions.LOGOUT) {
     return {
       ...state,

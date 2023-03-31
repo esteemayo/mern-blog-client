@@ -14,7 +14,7 @@ const initialState = {
 
 const UserPassword = () => {
   const { inputs, setInputs } = useState(initialState);
-  const { error, dispatch, updateSuccess, updateFailure } = useGlobalContext();
+  const { error, dispatch, isFetching, updateSuccess, updateFailure } = useGlobalContext();
 
   const handleChange = ({ target: input }) => {
     const { name, value } = input;

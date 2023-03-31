@@ -80,6 +80,7 @@ const UserData = () => {
           type='file'
           id='fileInput'
           style={{ display: 'none' }}
+          accept='image/*'
           onChange={(e) => setFile(e.target.files[0])}
         />
       </div>

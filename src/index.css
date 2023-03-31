@@ -374,6 +374,7 @@ body {
 
 .settingsForm > input {
   display: inline-block;
+  font-family: inherit;
   color: gray;
   margin: 10px 0;
   height: 30px;

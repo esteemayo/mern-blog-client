@@ -109,7 +109,7 @@ const UserData = () => {
         placeholder={user.email}
         onChange={handleChange}
       />
-      <button className='settingsSubmit' type='submit'>
+      <button className='settingsSubmit' type='submit' disabled={isFetching}>
         {isFetching ? <Loader size='sm' /> : 'Update'}
       </button>
       {success && (

@@ -30,7 +30,6 @@ const UserData = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true);
     dispatch({ type: UPDATE_START });
 
     const userData = {

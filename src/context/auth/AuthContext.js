@@ -58,6 +58,12 @@ const AuthProvider = ({ children }) => {
     });
   };
 
+  const reset = () => {
+    dispatch({
+      type: actions.RESET,
+    })
+  }
+
   const logout = () => {
     removeFromStorage(tokenKey);
     dispatch({

@@ -314,7 +314,7 @@ body {
 
 .settingsWrapper {
   flex: 9;
-  padding: 20px;
+  padding: 20px 50px;
 }
 
 .settingsTitle {

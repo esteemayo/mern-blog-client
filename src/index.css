@@ -395,7 +395,7 @@ body {
   display: inline-block;
   width: 100%;
   align-self: center;
-  border-radius: 10px;
+  border-radius: 5px;
   color: var(--clr-white);
   background-color: #008080;
   padding: 10px;

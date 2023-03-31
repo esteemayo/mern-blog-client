@@ -309,6 +309,7 @@ body {
 
 .settings {
   display: flex;
+  width: 100%;
 }
 
 .settingsWrapper {

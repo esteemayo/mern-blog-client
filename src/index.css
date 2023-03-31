@@ -382,6 +382,9 @@ body {
   border-bottom: 1px solid lightgray;
 }
 
+.settingsForm > input::-webkit-input-placeholder {
+}
+
 .settingsForm > input:focus {
   outline: none;
 }

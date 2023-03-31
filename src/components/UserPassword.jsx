@@ -74,7 +74,7 @@ const UserPassword = () => {
         </Button>
       </form>
       {error && (
-        <span style={{ color: 'red', marginTop: '10px', textAlign: 'center' }}>
+        <span className='errorMsg' style={{ color: 'red', marginTop: '10px', textAlign: 'center' }}>
           Something went wrong!
         </span>
       )}

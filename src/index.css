@@ -388,6 +388,7 @@ body {
 
 .settingsForm > input:focus {
   outline: none;
+  border-bottom: 1px solid currentColor;
 }
 
 .settingsSubmit {

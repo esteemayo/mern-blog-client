@@ -383,6 +383,7 @@ body {
 }
 
 .settingsForm > input::-webkit-input-placeholder {
+  color: #ccc;
 }
 
 .settingsForm > input:focus {

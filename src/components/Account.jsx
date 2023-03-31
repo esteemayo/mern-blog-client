@@ -5,7 +5,7 @@ import UserPassword from './UserPassword';
 
 const Account = () => {
   return (
-    <div>
+    <div className='account'>
       <UserData />
       <div className='space'></div>
       <UserPassword />

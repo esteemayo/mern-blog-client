@@ -1,3 +1,4 @@
+export const RESET = 'RESET';
 export const LOGOUT = 'LOGOUT';
 export const LOGIN_START = 'LOGIN_START';
 export const UPDATE_START = 'UPDATE_START';

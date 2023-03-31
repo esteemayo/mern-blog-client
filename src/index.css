@@ -413,6 +413,7 @@ body {
 }
 
 .errorMsg {
+  color: #f00;
 }
 
 .space {

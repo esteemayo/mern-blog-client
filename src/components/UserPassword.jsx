@@ -4,6 +4,7 @@ import Button from './Button';
 import { updateUserPassword } from '../services/userService';
 import { UPDATE_START } from '../context/auth/AuthTypes';
 import { useGlobalContext } from '../context/auth/AuthContext';
+import Loader from './Loader';
 
 const initialState = {
   password: '',

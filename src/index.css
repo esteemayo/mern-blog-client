@@ -405,6 +405,7 @@ body {
 }
 
 .settingsSubmit:disabled {
+  opacity: 0.5;
   cursor: not-allowed;
 }
 

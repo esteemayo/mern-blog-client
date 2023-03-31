@@ -381,6 +381,10 @@ body {
   border-bottom: 1px solid lightgray;
 }
 
+.settingsForm > input:focus {
+  outline: none;
+}
+
 .settingsSubmit {
   width: 150px;
   align-self: center;

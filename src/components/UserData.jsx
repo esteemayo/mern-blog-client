@@ -5,6 +5,7 @@ import { updateUserData } from '../services/userService';
 import { upload } from '../services/uploadService';
 import { useGlobalContext } from '../context/auth/AuthContext';
 import { UPDATE_START } from '../context/auth/AuthTypes';
+import Loader from './Loader';
 
 const PF = 'http://localhost:8080/images/';
 

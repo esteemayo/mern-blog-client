@@ -394,6 +394,8 @@ body {
 .settingsSubmit {
   border: none;
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   align-self: center;
   border-radius: 5px;

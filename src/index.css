@@ -392,6 +392,9 @@ body {
   cursor: pointer;
 }
 
+.space {
+}
+
 .single {
   display: flex;
 }

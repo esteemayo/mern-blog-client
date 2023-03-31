@@ -110,7 +110,7 @@ const UserData = () => {
         onChange={handleChange}
       />
       <button className='settingsSubmit' type='submit'>
-        {isFetching ? 'Processing...' : 'Update'}
+        {isFetching ? <Loader size='sm' /> : 'Update'}
       </button>
       {success && (
         <span style={successStyling}>Profile has been updated...</span>

@@ -404,6 +404,9 @@ body {
   cursor: pointer;
 }
 
+.settingsSubmit:disabled {
+}
+
 .space {
   height: 3px;
   margin: 50px 0;

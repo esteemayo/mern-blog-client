@@ -405,6 +405,7 @@ body {
 }
 
 .settingsSubmit:disabled {
+  cursor: not-allowed;
 }
 
 .space {

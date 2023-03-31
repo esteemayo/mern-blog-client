@@ -35,6 +35,14 @@ const UserPassword = () => {
     }
   };
 
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      reset();
+    }, 3000);
+
+    return () => clearTimeout(timeout);
+  }, [error]);
+
   return (
     <div>
       <div className='settingsTitle'>

@@ -300,6 +300,9 @@ body {
   outline: none;
 }
 
+.registerInput::placeholder {
+}
+
 .registerButton {
   display: flex;
   align-items: center;

@@ -52,6 +52,7 @@ const Register = () => {
           name='name'
           className='registerInput'
           placeholder='Enter your username...'
+          ref={nameRef}
           onChange={handleChange}
           ref={nameRef}
           autoFocus

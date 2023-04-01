@@ -291,6 +291,7 @@ body {
 .registerInput {
   border: none;
   display: inline-block;
+  font-family: inherit;
   padding: 10px;
   background-color: var(--clr-white);
 }

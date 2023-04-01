@@ -224,6 +224,9 @@ body {
   outline: none;
 }
 
+.loginInput::placeholder {
+}
+
 .loginButton {
   display: flex;
   align-items: center;

@@ -233,7 +233,7 @@ body {
   background-color: lightcoral;
   color: var(--clr-white);
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 10px;
   transition: all 0.2s ease;
 }

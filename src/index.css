@@ -214,6 +214,7 @@ body {
 }
 
 .loginInput {
+  border: none;
   display: inline-block;
   font-family: inherit;
   background-color: var(--clr-white);

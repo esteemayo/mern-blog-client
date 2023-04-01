@@ -318,7 +318,7 @@ body {
   border: none;
   color: var(--clr-white);
   border-radius: 10px;
-  padding: 10px;
+  padding: 5px;
 }
 
 .registerLoginButton {

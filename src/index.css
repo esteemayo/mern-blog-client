@@ -225,6 +225,7 @@ body {
 }
 
 .loginInput::placeholder {
+  font-size: 12px;
 }
 
 .loginButton {

@@ -301,6 +301,7 @@ body {
 }
 
 .registerInput::placeholder {
+  font-size: 12px;
 }
 
 .registerButton {

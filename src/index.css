@@ -217,6 +217,7 @@ body {
   border: none;
   display: inline-block;
   font-family: inherit;
+  padding: 10px;
   background-color: var(--clr-white);
   color: rgb(75, 74, 74);
   padding: 10px;

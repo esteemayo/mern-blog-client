@@ -491,6 +491,7 @@ body {
 }
 
 .writeInput {
+  border: none;
   font-size: 30px;
   border: none;
   padding: 20px;

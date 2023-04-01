@@ -33,6 +33,10 @@ const Login = () => {
   };
 
   useEffect(() => {
+    userRef.current.focus();
+  }, []);
+
+  useEffect(() => {
     error && toast.error(message);
   }, [error, message]);
 

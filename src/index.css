@@ -257,7 +257,7 @@ body {
   border: none;
   padding: 10px;
   color: var(--clr-white);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .register {

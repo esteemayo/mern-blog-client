@@ -223,6 +223,9 @@ body {
   border-bottom: 1px solid rgb(36, 35, 35);
 }
 
+.loginInput:focus {
+}
+
 .loginButton {
   display: flex;
   align-items: center;

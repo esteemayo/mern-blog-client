@@ -41,6 +41,8 @@ const Register = () => {
     }
   };
 
+  useEffect
+
   return (
     <div className='register'>
       <span className='registerTitle'>Register</span>

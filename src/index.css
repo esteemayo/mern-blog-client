@@ -302,6 +302,7 @@ body {
   color: rgb(75, 74, 74);
   border-radius: 5px;
   outline: none;
+  caret-color: #008080;
 }
 
 .registerInput::placeholder {

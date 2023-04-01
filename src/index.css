@@ -255,7 +255,7 @@ body {
   background-color: #008080;
   cursor: pointer;
   border: none;
-  padding: 5px;
+  padding: 10px;
   color: var(--clr-white);
   border-radius: 10px;
 }

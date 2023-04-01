@@ -69,7 +69,7 @@ const Topbar = () => {
       </div>
       <div className='topRight'>
         {user ? (
-          <Link to='/account/settings'>
+          <Link to='/account/settings' className='link'>
             <img
               className='topImg'
               src={PF + user.avatar}

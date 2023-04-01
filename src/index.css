@@ -224,9 +224,6 @@ body {
   outline: none;
 }
 
-.loginInput:focus {
-}
-
 .loginButton {
   display: flex;
   align-items: center;

@@ -295,6 +295,7 @@ body {
   padding: 10px;
   background-color: var(--clr-white);
   color: rgb(75, 74, 74);
+  border-bottom: 1px solid rgb(36, 35, 35);
 }
 
 .registerButton {

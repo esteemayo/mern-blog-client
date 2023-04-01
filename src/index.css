@@ -216,7 +216,6 @@ body {
 .loginInput {
   display: inline-block;
   font-family: inherit;
-  background-color: transparent;
   color: rgb(75, 74, 74);
   padding: 10px;
   background-color: var(--clr-white);

@@ -46,7 +46,6 @@ const Login = () => {
           id='username'
           className='loginInput'
           placeholder='Enter your username...'
-          autoFocus
           ref={userRef}
         />
         <label htmlFor='password'>Password</label>

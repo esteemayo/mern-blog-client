@@ -238,6 +238,7 @@ body {
 }
 
 .loginButton:hover {
+  font-weight: 700;
 }
 
 .loginButton:disabled {

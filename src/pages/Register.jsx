@@ -41,7 +41,9 @@ const Register = () => {
     }
   };
 
-  useEffect
+  useEffect(() => {
+    nameRef.current.focus();
+  }, []);
 
   return (
     <div className='register'>

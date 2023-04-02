@@ -525,6 +525,9 @@ body {
   cursor: pointer;
 }
 
+.writeSubmit:hover {
+}
+
 .posts {
   flex: 9;
   display: flex;

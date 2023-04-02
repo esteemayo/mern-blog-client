@@ -137,7 +137,7 @@ const SinglePost = () => {
             text={!loading ? 'Update' : null}
             onClick={() => handleUpdate(post._id)}
           >
-            {loading ? <Loader /> : null}
+            {loading ? <Loader size='sm' /> : null}
           </Button>
         )}
       </div>

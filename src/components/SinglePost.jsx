@@ -21,8 +21,6 @@ const SinglePost = () => {
   const [description, setDescription] = useState('');
   const [isEditing, setIsEditing] = useState(false);
 
-
-
   const handleUpdate = async () => {
     try {
       const postBody = {

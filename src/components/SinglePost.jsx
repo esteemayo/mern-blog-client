@@ -23,6 +23,8 @@ const SinglePost = () => {
   const [description, setDescription] = useState('');
 
   const handleUpdate = async (postId) => {
+    setLoading(true);
+
     try {
       const postBody = {
         title,

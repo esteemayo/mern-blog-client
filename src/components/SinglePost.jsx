@@ -18,6 +18,7 @@ const SinglePost = () => {
 
   const [post, setPost] = useState({});
   const [title, setTitle] = useState('');
+  const [isEditing, setIsEditing] = useState(false);
   const [description, setDescription] = useState('');
   const [isEditing, setIsEditing] = useState(false);
 

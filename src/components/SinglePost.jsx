@@ -69,7 +69,7 @@ const SinglePost = () => {
           <img src={PF + post.photo} alt='' className='singlePostImg' />
         ) : (
           <img
-            src='https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGJsb2clMjBwb3N0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
+            src={defaultImg}
             alt=''
             className='singlePostImg'
           />

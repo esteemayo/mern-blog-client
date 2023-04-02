@@ -134,7 +134,7 @@ const SinglePost = () => {
         {isEditing && (
           <Button
             className='singlePostButton'
-            text='Update'
+            text={!loading ? 'Update' : null}
             onClick={() => handleUpdate(post._id)}
           >
             {loading ? <Loader /> : null}

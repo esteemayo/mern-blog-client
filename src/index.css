@@ -526,6 +526,7 @@ body {
 }
 
 .writeSubmit:hover {
+  opacity: 0.85;
 }
 
 .posts {

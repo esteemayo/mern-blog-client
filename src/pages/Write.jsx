@@ -101,7 +101,7 @@ const Write = () => {
               name='title'
               placeholder='Title'
               className='writeInput'
-              autoFocus={true}
+              ref={titleRef}
               onChange={handleChange}
             />
           </div>

@@ -14,13 +14,6 @@ const Post = ({ slug, photo, title, category, createdAt, description }) => {
         src={PF + photo}
         alt=''
       />
-      ) : (
-        <img
-          className='postImg'
-          src={defaultImg}
-          alt=''
-        />
-      )}
       <div className='postInfo'>
         <div className='postCats'>
           <span className='postCat'>{category}</span>

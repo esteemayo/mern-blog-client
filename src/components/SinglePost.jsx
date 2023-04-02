@@ -9,6 +9,7 @@ import Button from './Button';
 import { useGlobalContext } from '../context/auth/AuthContext';
 import defaultImg from '../images/default.avif';
 import * as postAPI from '../services/postService';
+import Loader from './Loader';
 
 const PF = 'http://localhost:8080/images/';
 

@@ -493,6 +493,7 @@ body {
 .writeInput {
   border: none;
   display: inline-block;
+  font-family: inherit;
   font-size: 30px;
   padding: 20px;
   width: 70vw;

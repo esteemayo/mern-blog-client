@@ -15,6 +15,7 @@ const initialState = {
 };
 
 const Write = () => {
+  const titleRef = useRef();
   const [file, setFile] = useState(null);
   const [loading, setLoading] = useState(false);
   const [categories, setCategories] = useState([]);

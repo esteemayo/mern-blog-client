@@ -102,6 +102,7 @@ const Write = () => {
             />
             <input
               type='text'
+              name='title'
               placeholder='Title'
               className='writeInput'
               autoFocus={true}

@@ -46,9 +46,7 @@ const Write = () => {
     setLoading(true);
 
     const newPost = {
-      title,
-      category,
-      description,
+      ...inputs,
     };
 
     if (file) {

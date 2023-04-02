@@ -21,23 +21,7 @@ const SinglePost = () => {
   const [description, setDescription] = useState('');
   const [isEditing, setIsEditing] = useState(false);
 
-  useEffect(() => {
-    slug && (async () => {
-      try {
-        const { token } = axios.CancelToken.source();
-        const { data } = await postAPI.getPostWithSlug(slug, token);
-        setPost(data.post);
-        setTitle(data.post.title);
-        setDescription(data.post.description);
-      } catch (err) {
-        if (axios.isCancel(err)) {
-          console.log('cancelled');
-        } else {
-          console.log(err);
-        }
-      }
-    })();
-  }, [slug]);
+
 
   const handleUpdate = async () => {
     try {

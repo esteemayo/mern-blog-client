@@ -18,7 +18,6 @@ const Write = () => {
   const [file, setFile] = useState(null);
   const [loading, setLoading] = useState(false);
   const [categories, setCategories] = useState([]);
-  const [description, setDescription] = useState('');
   const [inputs, setInputs] = useState(initialState);
 
   const handleChange = ({ target: input }) => {

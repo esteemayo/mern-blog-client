@@ -136,6 +136,7 @@ const Write = () => {
           </div>
           <Button
             className='writeSubmit'
+            disabled={loading}
             text={!loading ? 'Publish' : null}
             disabled={loading}
           >

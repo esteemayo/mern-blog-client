@@ -22,7 +22,7 @@ axios.interceptors.response.use(null, (error) => {
 });
 
 const setJwt = (token) => {
-  axios.defaults.headers.common['Authorization'] = token;
+  axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
 };
 
 const http = {

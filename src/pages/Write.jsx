@@ -138,7 +138,6 @@ const Write = () => {
             className='writeSubmit'
             disabled={loading}
             text={!loading ? 'Publish' : null}
-            disabled={loading}
           >
             {loading ? <Loader size='sm' /> : null}
           </Button>

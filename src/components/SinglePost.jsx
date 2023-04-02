@@ -62,6 +62,24 @@ const SinglePost = () => {
     }
   };
 
+  useEffect(() => {
+    slug && (async () => {
+      try {
+        const { token } = axios.CancelToken.source();
+        const { data } = await postAPI.getPostWithSlug(slug, token);
+        setPost(data.post);
+        setTitle(data.post.title);
+        setDescription(data.post.description);
+      } catch (err) {
+        if (axios.isCancel(err)) {
+          console.log('cancelled');
+        } else {
+          console.log(err);
+        }
+      }
+    })();
+  }, [slug]);
+
   return (
     <div className='singlePost'>
       <div className='singlePostWrapper'>

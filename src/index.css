@@ -499,6 +499,7 @@ body {
   padding: 20px;
   background-color: transparent;
   color: rgb(75, 74, 74);
+  caret-color: #008080;
 }
 
 .writeInput:focus {

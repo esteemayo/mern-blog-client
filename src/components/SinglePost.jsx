@@ -95,7 +95,7 @@ const SinglePost = () => {
                 >
                   <FaEdit />
                 </span>
-                <span className='singlePostIcon' onClick={handleDelete}>
+                <span className='singlePostIcon' onClick={() => handleDelete(post._id)}>
                   <FaTrashAlt />
                 </span>
               </div>

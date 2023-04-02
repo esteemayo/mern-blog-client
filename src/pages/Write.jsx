@@ -23,6 +23,11 @@ const Write = () => {
   const [description, setDescription] = useState('');
   const [inputs, setInputs] = useState(initialState);
 
+  const handleChange = ({ target: input }) => {
+    const { name, value } = input;
+    setInputs((prev) => ({ ...prev, [name]: value }));
+  };
+
   useEffect(() => {
     (async () => {
       try {

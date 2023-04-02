@@ -19,5 +19,5 @@ export const updateUserPassword = (userData) =>
 
 export const deleteCurrentUser = () => http.delete(`${apiEndPoint}/delete-me`);
 
-const getJwt = () =>
+export const getJwt = () =>
   getFromStorage(tokenKey) && getFromStorage(tokenKey).token;

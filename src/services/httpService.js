@@ -2,7 +2,7 @@ import axios from 'axios';
 import { toast } from 'react-toastify';
 
 import logger from './logService';
-import { getFromStorage } from '../utils';
+import { getFromStorage, tokenKey } from '../utils';
 
 axios.defaults.baseURL = 'http://localhost:8080/api/v1';
 

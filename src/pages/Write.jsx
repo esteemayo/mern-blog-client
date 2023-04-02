@@ -25,21 +25,7 @@ const Write = () => {
     setInputs((prev) => ({ ...prev, [name]: value }));
   };
 
-  useEffect(() => {
-    (async () => {
-      try {
-        const { token } = axios.CancelToken.source();
-        const { data } = await getCategories(token);
-        setCategories(data.docs);
-      } catch (err) {
-        if (axios.isCancel(err)) {
-          console.log('cancelled');
-        } else {
-          console.error(err);
-        }
-      }
-    })();
-  }, []);
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -74,6 +60,22 @@ const Write = () => {
       console.log(err.response.data.message);
     }
   };
+
+  useEffect(() => {
+    (async () => {
+      try {
+        const { token } = axios.CancelToken.source();
+        const { data } = await getCategories(token);
+        setCategories(data.docs);
+      } catch (err) {
+        if (axios.isCancel(err)) {
+          console.log('cancelled');
+        } else {
+          console.error(err);
+        }
+      }
+    })();
+  }, []);
 
   return (
     <div>

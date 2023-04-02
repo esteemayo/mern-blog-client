@@ -43,7 +43,7 @@ Post.propTypes = {
   _id: PropTypes.string.isRequired,
   slug: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  photo: PropTypes.string.isRequired,
+  photo: PropTypes.string,
   category: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   createdAt: PropTypes.string.isRequired,

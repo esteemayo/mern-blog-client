@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 
 import Button from './Button';
 import { useGlobalContext } from '../context/auth/AuthContext';
+import defaultImg from '../images/default.avif';
 import * as postAPI from '../services/postService';
 
 const PF = 'http://localhost:8080/images/';

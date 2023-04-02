@@ -498,6 +498,7 @@ body {
   width: 70vw;
   padding: 20px;
   background-color: transparent;
+  color: rgb(75, 74, 74);
 }
 
 .writeInput:focus {

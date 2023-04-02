@@ -35,7 +35,7 @@ const SinglePost = () => {
     }
   };
 
-  const handleDelete = async () => {
+  const handleDelete = async (postId) => {
     try {
       await postAPI.deletePost(post._id);
       window.location.replace('/');

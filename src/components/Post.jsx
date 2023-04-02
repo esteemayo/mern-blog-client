@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-import defaultImg from '../../assets/default.avif';
+import defaultImg from '../images/default.avif';
 
 const Post = ({ slug, photo, title, category, createdAt, description }) => {
   const PF = 'http://localhost:8080/images/';

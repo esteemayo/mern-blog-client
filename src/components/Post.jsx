@@ -10,11 +10,11 @@ const Post = ({ slug, photo, title, category, createdAt, description }) => {
   return (
     <div className='post'>
       {photo ? (
-        <img
-          className='postImg'
-          src={PF + photo}
-          alt=''
-        />
+      <img
+        className='postImg'
+        src={PF + photo}
+        alt=''
+      />
       ) : (
         <img
           className='postImg'

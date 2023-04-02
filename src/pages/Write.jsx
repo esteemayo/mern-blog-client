@@ -106,7 +106,7 @@ const Write = () => {
           </div>
           <div className='writeFormGroup'>
             <select
-              id='categories'
+              id='category'
               name='categories'
               className='writeSelect'
               onChange={handleChange}

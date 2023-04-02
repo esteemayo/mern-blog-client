@@ -21,6 +21,7 @@ const Write = () => {
   const [loading, setLoading] = useState(false);
   const [categories, setCategories] = useState([]);
   const [description, setDescription] = useState('');
+  const [inputs, setInputs] = useState(initialState);
 
   useEffect(() => {
     (async () => {

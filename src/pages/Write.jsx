@@ -113,7 +113,7 @@ const Write = () => {
               id='categories'
               name='categories'
               className='writeSelect'
-              onChange={(e) => setCategory(e.target.value)}
+              onChange={handleChange}
             >
               <option>select a category</option>
               {categories.map((category) => {

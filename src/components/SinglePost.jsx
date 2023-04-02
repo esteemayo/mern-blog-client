@@ -35,6 +35,7 @@ const SinglePost = () => {
       setLoading(false);
       setIsEditing(false);
     } catch (err) {
+      setLoading(false);
       console.error(err);
     }
   };

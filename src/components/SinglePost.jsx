@@ -20,7 +20,6 @@ const SinglePost = () => {
   const [title, setTitle] = useState('');
   const [isEditing, setIsEditing] = useState(false);
   const [description, setDescription] = useState('');
-  const [isEditing, setIsEditing] = useState(false);
 
   const handleUpdate = async (postId) => {
     try {

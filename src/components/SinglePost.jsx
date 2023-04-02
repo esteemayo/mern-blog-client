@@ -32,6 +32,7 @@ const SinglePost = () => {
       };
 
       await postAPI.updatePost(postId, postBody);
+      setLoading(false);
       setIsEditing(false);
     } catch (err) {
       console.error(err);

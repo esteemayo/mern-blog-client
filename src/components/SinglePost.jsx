@@ -21,7 +21,7 @@ const SinglePost = () => {
   const [description, setDescription] = useState('');
   const [isEditing, setIsEditing] = useState(false);
 
-  const handleUpdate = async () => {
+  const handleUpdate = async (postId) => {
     try {
       const postBody = {
         title,

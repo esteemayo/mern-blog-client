@@ -519,6 +519,7 @@ body {
   font-size: 16px;
   color: var(--clr-white);
   background-color: #008080;
+  color: var(--clr-white);
   padding: 10px;
   border: none;
   border-radius: 5px;

@@ -129,7 +129,7 @@ const Write = () => {
             <textarea
               placeholder='Tell your story...'
               className='writeInput writeText'
-              onChange={(e) => setDescription(e.target.value)}
+              onChange={handleChange}
             ></textarea>
           </div>
           <Button

@@ -76,6 +76,10 @@ const Write = () => {
     })();
   }, []);
 
+  useEffect(() => {
+    titleRef.current.focus();
+  }, []);
+
   return (
     <div>
       <div className='write'>

@@ -3,7 +3,6 @@ import { getFromStorage, tokenKey } from '../utils';
 
 const apiEndPoint = '/users';
 
-http.setJwt(getJwt());
 
 export const registerUser = (userData) =>
   http.post(`${apiEndPoint}/signup`, userData);
@@ -21,3 +20,5 @@ export const deleteCurrentUser = () => http.delete(`${apiEndPoint}/delete-me`);
 
 export const getJwt = () =>
   getFromStorage(tokenKey) && getFromStorage(tokenKey).token;
+
+http.setJwt(getJwt());

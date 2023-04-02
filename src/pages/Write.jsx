@@ -8,6 +8,12 @@ import { upload } from '../services/uploadService';
 import { createPost } from '../services/postService';
 import Loader from '../components/Loader';
 
+const initialState = {
+  title: '',
+  category: '',
+  description: '',
+};
+
 const Write = () => {
   const [file, setFile] = useState(null);
   const [title, setTitle] = useState('');

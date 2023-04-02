@@ -129,7 +129,7 @@ const SinglePost = () => {
           <Button
             className='singlePostButton'
             text='Update'
-            onClick={handleUpdate}
+            onClick={() => handleUpdate(post._id)}
           />
         )}
       </div>

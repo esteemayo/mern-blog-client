@@ -136,7 +136,9 @@ const SinglePost = () => {
             className='singlePostButton'
             text='Update'
             onClick={() => handleUpdate(post._id)}
-          />
+          >
+
+          </Button>
         )}
       </div>
     </div>

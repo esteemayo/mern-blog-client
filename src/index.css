@@ -706,6 +706,7 @@ body {
 }
 
 .singlePostButton:hover {
+  opacity: 0.85;
 }
 
 .about {

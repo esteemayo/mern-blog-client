@@ -701,6 +701,7 @@ body {
   align-self: flex-end;
   margin-top: 20px;
   display: flex;
+  align-items: center;
 }
 
 .about {

@@ -711,6 +711,7 @@ body {
 }
 
 .singlePostButton:disabled {
+  cursor: not-allowed;
 }
 
 .about {

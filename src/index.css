@@ -705,6 +705,9 @@ body {
   justify-content: center;
 }
 
+.singlePostButton:hover {
+}
+
 .about {
   padding: 2rem;
 }

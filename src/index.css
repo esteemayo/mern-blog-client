@@ -693,6 +693,7 @@ body {
 .singlePostButton {
   width: 100px;
   border: none;
+  padding: 5px;
   background-color: #008080;
   color: var(--clr-white);
   padding: 5px;

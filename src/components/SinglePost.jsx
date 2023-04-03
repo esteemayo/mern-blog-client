@@ -136,6 +136,7 @@ const SinglePost = () => {
             className='singlePostButton'
             text={!loading ? 'Update' : null}
             onClick={() => handleUpdate(post._id)}
+            disabled={loading}
           >
             {loading ? <Loader size='sm' /> : null}
           </Button>

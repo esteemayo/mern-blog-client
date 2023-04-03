@@ -700,6 +700,7 @@ body {
   cursor: pointer;
   align-self: flex-end;
   margin-top: 20px;
+  display: flex;
 }
 
 .about {

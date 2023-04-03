@@ -710,6 +710,9 @@ body {
   opacity: 0.85;
 }
 
+.singlePostButton:disable {
+}
+
 .about {
   padding: 2rem;
 }

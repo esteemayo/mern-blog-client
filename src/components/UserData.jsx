@@ -53,7 +53,7 @@ const UserData = () => {
 
     try {
       const { data } = await updateUserData({ ...userData });
-      updateSuccess(data);
+      updateSuccess(data.details);
       setSuccess(true);
       window.location.reload();
     } catch (err) {

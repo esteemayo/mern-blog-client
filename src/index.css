@@ -696,7 +696,6 @@ body {
   padding: 5px;
   background-color: #008080;
   color: var(--clr-white);
-  padding: 5px;
   border-radius: 5px;
   cursor: pointer;
   align-self: flex-end;

@@ -7,7 +7,7 @@ const BackToTop = () => {
   window.onscroll = () => {
     setIsVisible(window.pageYOffset > 500 ? true : false);
     return () => (window.onscroll === null);
-  }
+  };
 
   return (
     <div className='backtotopContainer'>

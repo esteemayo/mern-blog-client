@@ -5,6 +5,7 @@ import { ToastContainer } from 'react-toastify';
 import Topbar from './components/TopBar';
 import ProtectedRoute from './utils/ProtectedRoute';
 import AuthRoute from './utils/AuthRoute';
+import BackToTop from './components/BackToTop';
 import {
   About,
   Category,

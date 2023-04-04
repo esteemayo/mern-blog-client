@@ -793,6 +793,7 @@ body {
 }
 
 .backtotopContainer {
+  position: fixed;
 }
 
 .spinner {

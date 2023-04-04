@@ -19,7 +19,7 @@ const BackToTop = () => {
   return (
     <div className='backtotopContainer'>
       {isVisible && (
-        <div className='iconWrapper'>
+        <div className='iconWrapper' onClick={scrollHandler}>
           <KeyboardArrowUpOutlined />
         </div>
       )}

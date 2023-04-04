@@ -800,6 +800,9 @@ body {
   animation: fadeIn 700ms ease-in-out 1s both;
 }
 
+.iconWrapper {
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

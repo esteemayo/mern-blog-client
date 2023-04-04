@@ -9,7 +9,7 @@ import { LOGIN_START } from '../context/auth/AuthTypes';
 import Loader from '../components/Loader';
 
 const Login = () => {
-  const { error, message, isFetching, dispatch, loginSuccess, loginFailure } =
+  const { error, reset, message, isFetching, dispatch, loginSuccess, loginFailure } =
     useGlobalContext();
   const passwordRef = useRef(null);
   const userRef = useRef(null);

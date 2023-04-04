@@ -815,6 +815,7 @@ body {
 }
 
 .iconWrapper:hover {
+  background-color: #038f8f;
 }
 
 @keyframes fadeIn {

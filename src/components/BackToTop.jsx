@@ -15,6 +15,7 @@ const BackToTop = () => {
       <div className='iconWrapper'>
         <KeyboardArrowUpOutlined />
       </div>
+      )}
     </div>
   );
 };

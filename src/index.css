@@ -792,6 +792,9 @@ body {
   color: #e35b52;
 }
 
+.backtotopContainer {
+}
+
 .spinner {
   --d: 22px;
   width: 4px;

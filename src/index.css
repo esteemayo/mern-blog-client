@@ -806,6 +806,7 @@ body {
   justify-content: center;
   width: 40px;
   height: 40px;
+  font-size: 15px;
 }
 
 @keyframes fadeIn {

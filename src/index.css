@@ -814,6 +814,9 @@ body {
   cursor: pointer;
 }
 
+.iconWrapper:hover {
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

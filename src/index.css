@@ -799,6 +799,16 @@ body {
   z-index: 3000;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 .spinner {
   --d: 22px;
   width: 4px;

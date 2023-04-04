@@ -1,5 +1,5 @@
 import React from 'react';
-import { KeyboardArrowUpOutlined } from '@material-ui/icons'
+import { KeyboardArrowUpOutlined } from '@mui/icons-material';
 
 const BackToTop = () => {
   return (

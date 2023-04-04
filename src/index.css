@@ -815,6 +815,9 @@ body {
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
+.iconWrapper svg {
+}
+
 .iconWrapper:hover {
   background-color: #f59d9d;
 }

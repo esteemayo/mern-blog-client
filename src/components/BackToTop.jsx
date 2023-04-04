@@ -9,6 +9,13 @@ const BackToTop = () => {
     return () => (window.onscroll === null);
   };
 
+  const scrollHandler = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <div className='backtotopContainer'>
       {isVisible && (

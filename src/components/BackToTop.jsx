@@ -3,7 +3,7 @@ import { KeyboardArrowUpOutlined } from '@mui/icons-material';
 
 const BackToTop = () => {
   return (
-    <div className='backtotop-container'>
+    <div className='backtotopContainer'>
       <div className='iconWrapper'>
         <KeyboardArrowUpOutlined />
       </div>

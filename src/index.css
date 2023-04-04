@@ -809,6 +809,7 @@ body {
   font-size: 15px;
   background-color: #008080;
   color: var(--clr-white);
+  border-radius: 50%;
 }
 
 @keyframes fadeIn {

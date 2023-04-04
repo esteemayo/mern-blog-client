@@ -2,7 +2,9 @@ import React from 'react';
 
 const BackToTop = () => {
   return (
-    <div>BackToTop</div>
+    <div className='backtotop-container'>
+      <div className='iconWrapper'></div>
+    </div>
   );
 };
 

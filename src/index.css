@@ -816,6 +816,7 @@ body {
 }
 
 .iconWrapper svg {
+  color: currentColor;
 }
 
 .iconWrapper:hover {

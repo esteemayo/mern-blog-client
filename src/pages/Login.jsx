@@ -38,6 +38,7 @@ const Login = () => {
 
   useEffect(() => {
     error && toast.error(message);
+    return () => reset();
   }, [error, message]);
 
   return (

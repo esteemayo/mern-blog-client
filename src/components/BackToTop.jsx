@@ -11,6 +11,7 @@ const BackToTop = () => {
 
   return (
     <div className='backtotopContainer'>
+      {isVisible && (
       <div className='iconWrapper'>
         <KeyboardArrowUpOutlined />
       </div>

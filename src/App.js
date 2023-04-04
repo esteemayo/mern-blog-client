@@ -24,6 +24,7 @@ function App() {
   return (
     <Router>
       <Topbar />
+      <BackToTop />
       <div>
         <ToastContainer />
         <Switch>

@@ -794,6 +794,7 @@ body {
 
 .backtotopContainer {
   position: fixed;
+  bottom: 1rem;
 }
 
 .spinner {

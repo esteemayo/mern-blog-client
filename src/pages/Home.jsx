@@ -17,7 +17,6 @@ const Home = () => {
   useEffect(() => {
     (async () => {
       try {
-        const { token } = axios.CancelToken.source();
         const { data } = await getPosts(search, token);
         setPosts(data.posts);
         setLoading(false);

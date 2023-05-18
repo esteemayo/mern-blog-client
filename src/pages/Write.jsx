@@ -64,7 +64,6 @@ const Write = () => {
     const { token } = axios.CancelToken.source();
     (async () => {
       try {
-        const { token } = axios.CancelToken.source();
         const { data } = await getCategories(token);
         setCategories(data.docs);
       } catch (err) {

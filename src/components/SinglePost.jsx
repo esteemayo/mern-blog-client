@@ -51,6 +51,7 @@ const SinglePost = () => {
   };
 
   useEffect(() => {
+    const { token } = axios.CancelToken.source();
     slug && (async () => {
       try {
         const { data } = await postAPI.getPostWithSlug(slug, token);

@@ -15,6 +15,7 @@ const SideBar = () => {
 
   useEffect(() => {
     const { cancel } = axios.CancelToken.source();
+
     (async () => {
       const catsFromServer = await fetchCategories();
       setCategories(catsFromServer);

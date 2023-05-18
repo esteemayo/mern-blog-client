@@ -53,7 +53,6 @@ const SinglePost = () => {
   useEffect(() => {
     slug && (async () => {
       try {
-        const { token } = axios.CancelToken.source();
         const { data } = await postAPI.getPostWithSlug(slug, token);
         setPost(data.post);
         setTitle(data.post.title);

@@ -61,6 +61,7 @@ const Write = () => {
   };
 
   useEffect(() => {
+    const { token } = axios.CancelToken.source();
     (async () => {
       try {
         const { token } = axios.CancelToken.source();

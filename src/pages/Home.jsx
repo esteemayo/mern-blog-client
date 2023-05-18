@@ -31,6 +31,8 @@ const Home = () => {
         }
       }
     })();
+
+    return () => cancel();
   }, [search]);
 
   if (loading) {

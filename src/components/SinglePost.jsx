@@ -67,6 +67,8 @@ const SinglePost = () => {
         }
       }
     })();
+
+    return () => cancel();
   }, [slug]);
 
   return (

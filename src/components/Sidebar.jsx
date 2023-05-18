@@ -19,6 +19,8 @@ const SideBar = () => {
       const catsFromServer = await fetchCategories();
       setCategories(catsFromServer);
     })();
+
+    return () => cancel();
   }, []);
 
   const fetchCategories = async () => {

@@ -21,7 +21,6 @@ const SideBar = () => {
   }, []);
 
   const fetchCategories = async () => {
-    try {
       const { token } = axios.CancelToken.source();
       const {
         data: { docs },

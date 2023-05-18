@@ -62,6 +62,7 @@ const Write = () => {
 
   useEffect(() => {
     const { token } = axios.CancelToken.source();
+
     (async () => {
       try {
         const { data } = await getCategories(token);

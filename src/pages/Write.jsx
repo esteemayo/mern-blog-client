@@ -75,6 +75,8 @@ const Write = () => {
         }
       }
     })();
+
+    return () => cancel();
   }, []);
 
   useEffect(() => {
